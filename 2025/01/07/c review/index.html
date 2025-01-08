@@ -27,7 +27,7 @@
 <meta property="og:description" content="指针的const限定1.指向const对象的指针123456const int *p;&#x2F;&#x2F;或int const *p;int a;p &#x3D; &amp;a;&#x2F;&#x2F;正确，p不是只读的*p &#x3D; 42;&#x2F;&#x2F;错误,*p是只读的const int *cptrf &#x3D; &amp;f;&#x2F;&#x2F;正确int *ptr &#x3D; &amp;p;&#x2F;&#x2F;错误  非const对象指针的地址可以赋给const对象的指针，const对象指针的地址">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-01-07T11:49:03.000Z">
-<meta property="article:modified_time" content="2025-01-07T14:57:51.819Z">
+<meta property="article:modified_time" content="2025-01-08T01:26:21.851Z">
 <meta property="article:author" content="Lanxinmob">
 <meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary_large_image">
@@ -98,7 +98,9 @@
 
 
   
-<meta name="generator" content="Hexo 7.3.0"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head>
 
 
 <body>
@@ -403,9 +405,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/01/08/about/" title="About">
+                      <a href="/2025/01/08/latex/" title="LaTex笔记">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">About</span>
+                        <span class="hidden-mobile">LaTex笔记</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -737,5 +739,20 @@
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

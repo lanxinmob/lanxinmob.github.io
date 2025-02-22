@@ -29,8 +29,14 @@
 <meta property="og:image" content="http://example.com/images/image.png">
 <meta property="og:image" content="http://example.com/images/image(1).png">
 <meta property="og:image" content="http://example.com/images/image(2).png">
+<meta property="og:image" content="http://example.com/images/image(3).png">
+<meta property="og:image" content="http://example.com/images/image(4).png">
+<meta property="og:image" content="http://example.com/images/image(5).png">
+<meta property="og:image" content="http://example.com/images/image(6).png">
+<meta property="og:image" content="http://example.com/images/image(7).png">
+<meta property="og:image" content="http://example.com/images/image(8).png">
 <meta property="article:published_time" content="2025-02-21T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-02-22T10:53:52.664Z">
+<meta property="article:modified_time" content="2025-02-22T10:55:38.846Z">
 <meta property="article:author" content="Lanxinmob">
 <meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary_large_image">
@@ -242,7 +248,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.2k 字
+          3.1k 字
         
       </span>
     
@@ -350,13 +356,13 @@
 </ol>
 <ul>
 <li>半加器 (处理1个 bit，2个输入)  输出”总和”和”进位”<br><img src="/images/image(2).png" srcset="/img/loading.gif" lazyload></li>
-<li>全加器 (处理1个 bit，3个输入)<br>![](&#x2F;images&#x2F;image (3).png)</li>
+<li>全加器 (处理1个 bit，3个输入)<br><img src="/images/image(3).png" srcset="/img/loading.gif" lazyload></li>
 </ul>
 <ol start="3">
 <li>8 bit 加法 (1个半加器，7个全加器）</li>
 </ol>
 <ul>
-<li>把这个全加器的进位连到下个全加器的输入，8位行波进位加法器<br>![](&#x2F;images&#x2F;image (4).png)</li>
+<li>把这个全加器的进位连到下个全加器的输入，8位行波进位加法器<br><img src="/images/image(4).png" srcset="/img/loading.gif" lazyload></li>
 <li>如果第 9 位有进位，代表着 2 个数字的和太大了，超过了 8 位这叫 “<strong>溢出</strong>“ (overflow)。著名的例子是，吃豆人用 8 位存当前关卡数，如果你玩到了第 256 关（ 8 位 bit 最大表示 255），ALU 会溢出，造成一连串错误和乱码，使得该关卡无法进行，这个 bug 成了厉害吃豆人玩家的代表</li>
 <li>缺点是每次进位都要一点时间但如今的量级是每秒几十亿次运算，所以会造成影响，所以，现代计算机用的加法电路有点不同，叫 “超前进位加法器”</li>
 <li>乘法用多次加法来实现，除法用迭代减法实现</li>
@@ -377,14 +383,14 @@
 <li>存 1 位 “AND-OR <strong>锁存器</strong>“(Gated Latch - 锁存器）</li>
 </ol>
 <ul>
-<li>它有两个输入，”设置”输入, 把输出变成 1，”复位”输入, 把输出变成 0 ，如果”设置”和”复位”都是 0，电路会输出最后放入的内容<br>![](&#x2F;images&#x2F;image (5).png)</li>
-<li>一根线来”启用”内存，这条线叫 “允许写入线”<br>![](&#x2F;images&#x2F;image (6).png)</li>
+<li>它有两个输入，”设置”输入, 把输出变成 1，”复位”输入, 把输出变成 0 ，如果”设置”和”复位”都是 0，电路会输出最后放入的内容<br><img src="/images/image(5).png" srcset="/img/loading.gif" lazyload></li>
+<li>一根线来”启用”内存，这条线叫 “允许写入线”<br><img src="/images/image(6).png" srcset="/img/loading.gif" lazyload></li>
 </ul>
 <ol start="3">
 <li>存 8 位 (Register - <strong>寄存器</strong>)</li>
 </ol>
 <ul>
-<li>如果我们并排放 8 个锁存器，可以存 8 位信息，比如一个 8 bit 数字，一组这样的锁存器叫 “寄存器”，寄存器能存一个数字，这个数字有多少位，叫”位宽”，如今许多计算机都有 64 位宽的寄存器<br>![](&#x2F;images&#x2F;image (7).png)</li>
+<li>如果我们并排放 8 个锁存器，可以存 8 位信息，比如一个 8 bit 数字，一组这样的锁存器叫 “寄存器”，寄存器能存一个数字，这个数字有多少位，叫”位宽”，如今许多计算机都有 64 位宽的寄存器<br><img src="/images/image(7).png" srcset="/img/loading.gif" lazyload></li>
 <li>为了减少线的数量，在矩阵中做成网格，要启用某个锁存器，就打开相应的行线和列线，只有行线和列线均为1， AND 门才输出 1</li>
 </ul>
 <ol start="4">
@@ -414,7 +420,7 @@
 <li>”指令集”</li>
 </ol>
 <ul>
-<li>LOAD_A，LOAD_B，SUB，JUMP，ADD，HALT 等指令<br>![](&#x2F;images&#x2F;image (8).png)</li>
+<li>LOAD_A，LOAD_B，SUB，JUMP，ADD，HALT 等指令<br><img src="/images/image(8).png" srcset="/img/loading.gif" lazyload></li>
 <li>JUMP 0 可以跳回开头，JUMP 在底层的实现方式是用指令后 4 位的值覆盖掉 “指令地址寄存器” 里的值</li>
 <li>带条件跳转，JUMP NEGATIVE 只在 ALU 的 “负数标志” 为真时，即算术结果是负数才跳转，还有其他类型的 JUMP </li>
 <li>真正现代 CPU 用更多指令集，位数更长。</li>

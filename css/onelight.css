@@ -1,14 +1,14 @@
 
 @font-face {
     font-family: 'Cascadia Code';
-    src: url('./onelight/fonts/CascadiaCode.woff2') format('woff2');
+    src: url('/css/fonts/CascadiaCode.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: '喵字果汁体';
-    src: url('./onelight/fonts/MiaoZi-GuoZhiTi.woff2') format('woff2');
+    src: url('/css/fonts/MiaoZi-GuoZhiTi.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -76,18 +76,18 @@ body {
     color: #fff
 }
 
-#write {
+.post-content {
     letter-spacing: 0;
     /* max-width: 914px; */
     text-align: left
 }
 
-#write,
-#write p {
+.post-content,
+.post-content p {
     font-size: 16px
 }
 
-#write p {
+.post-content p {
     line-height: 26px;
     margin: 0;
     padding-bottom: 8px;
@@ -95,53 +95,53 @@ body {
 }
 
 
-#write input[type=checkbox] {
+.post-content input[type=checkbox] {
     left: -3px;
     margin-right: 5px;
     margin-top: calc(1em - 2px)
 }
 
-#write h2,
-#write h3,
-#write h4,
-#write h5,
-#write h6 {
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
     color: #000;
     font-weight: 700;
     margin: .72em 0;
     padding: 0
 }
 
-#write h2:hover:before {
+.post-content h2:hover:before {
     bottom: .2rem;
     content: "H2"
 }
 
-#write h3:hover:before {
+.post-content h3:hover:before {
     bottom: .2rem;
     content: "H3"
 }
 
-#write h4:hover:before {
+.post-content h4:hover:before {
     bottom: .2rem;
     content: "H4"
 }
 
-#write h5:hover:before {
+.post-content h5:hover:before {
     bottom: .2rem;
     content: "H5"
 }
 
-#write h6:hover:before {
+.post-content h6:hover:before {
     bottom: .2rem;
     content: "H6"
 }
 
-#write h2:hover:before,
-#write h3:hover:before,
-#write h4:hover:before,
-#write h5:hover:before,
-#write h6:hover:before {
+.post-content h2:hover:before,
+.post-content h3:hover:before,
+.post-content h4:hover:before,
+.post-content h5:hover:before,
+.post-content h6:hover:before {
     border-radius: 0;
     bottom: 0;
     color: #166ff36e;
@@ -157,61 +157,61 @@ body {
     vertical-align: baseline;
 }
 
-#write h2 {
+.post-content h2 {
     font-size: 1.7rem;
     margin: 1em 0
 }
 
-#write h2 span {
+.post-content h2 span {
     color: #136ef7;
     font-weight: 700;
     padding: 3px 10px 1px
 }
 
-#write h3 {
+.post-content h3 {
     font-size: 1.5rem
 }
 
-#write h4 {
+.post-content h4 {
     font-size: 1.25rem
 }
 
-#write h5,
-#write h6 {
+.post-content h5,
+.post-content h6 {
     font-size: 1rem
 }
 
-#write ol,
-#write ul {
+.post-content ol,
+.post-content ul {
     /* color: var(--main-red); */
     margin-bottom: 8px;
     margin-top: 8px;
     padding-left: 40px
 }
 
-#write ul {
+.post-content ul {
     list-style-type: disclosure-closed
 }
 
-#write ul ul {
+.post-content ul ul {
     list-style-type: square
 }
 
-#write ol {
+.post-content ol {
     list-style-type: decimal
 }
 
-#write li section {
+.post-content li section {
     font-size: 15px
 }
 
-#write strong {
+.post-content strong {
     color: #136ef7;
     font-weight: 700
 }
 
 /* 引用块 */
-#write blockquote {
+.post-content blockquote {
     background: var(--gradient-color);
     backdrop-filter: blur(5px);
     border-bottom-right-radius: 10px;
@@ -228,19 +228,19 @@ body {
     transition: var(--transition)
 }
 
-#write blockquote:hover {
+.post-content blockquote:hover {
     background: #fff;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
     /* transform: var(--transform); */
     backdrop-filter: unset;
 }
 
-#write blockquote p {
+.post-content blockquote p {
     line-height: 26px
 }
 
 
-#write a {
+.post-content a {
     margin: 3px;
     border-bottom: 2px solid var(--main-purple);
     color: var(--main-purple);
@@ -248,16 +248,16 @@ body {
     text-decoration: none
 }
 
-#write code {
+.post-content code {
     background-color: #ebebeb;
     color: #eb4c37;
     font-family: var(--main-font-family);
     font-size: 14px
 }
 
-#write li code,
-#write p code,
-#write span code {
+.post-content li code,
+.post-content p code,
+.post-content span code {
     border-radius: 4px;
     margin: 0 2px;
     padding: 2px 4px;
@@ -266,7 +266,7 @@ body {
 }
 
 /* 图片 */
-#write img {
+.post-content img {
     border: 0;
     border-radius: 5px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
@@ -278,25 +278,25 @@ body {
     width: auto
 }
 
-#write img:hover {
+.post-content img:hover {
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
     /* transform: var(--transform); */
 }
 
 /* 表格 */
-#write table tr {
+.post-content table tr {
     background-color: #fff;
     border: 0;
     border-top: 1px solid #ccc
 }
 
 /* 交替颜色 */
-#write table tr:nth-child(2n) {
+.post-content table tr:nth-child(2n) {
     background-color: #f3f3f3
 }
 
-#write table tr td,
-#write table tr th {
+.post-content table tr td,
+.post-content table tr th {
     border: 1px solid #ccc;
     font-size: 16px;
     line-height: 1.5;
@@ -304,26 +304,26 @@ body {
     text-align: left
 }
 
-#write table tr th {
+.post-content table tr th {
     background-color: #42a5f53d;
     color: var(--main-blue);
     font-weight: 700
 }
 
-#write .md-def-name {
+.post-content .md-def-name {
     padding-right: 2.3vw
 }
 
-#write .md-def-name:before {
+.post-content .md-def-name:before {
     color: #000;
     content: "["
 }
 
-#write .md-def-name:after {
+.post-content .md-def-name:after {
     color: #000
 }
 
-.md-fences,
+.highlight,
 code {
     border-radius: 5px;
     margin-left: .2em;
@@ -331,7 +331,7 @@ code {
     padding: .1em
 }
 
-.md-fences {
+.highlight {
     background-color: var(--code-bg-color);
     box-shadow: 0 4px 10px gray;
     color: #ececec;
@@ -340,7 +340,7 @@ code {
     transition: var(--transition)
 }
 
-/* .md-fences:hover {
+/* .highlight:hover {
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
 } */
 
@@ -433,7 +433,7 @@ mark {
     font-weight: 700
 }
 
-#write pre {
+.post-content pre {
     background: var(--code-bg-color);
     font-family: var(--main-font-family)
 }
@@ -445,7 +445,7 @@ mark {
     text-shadow: none
 }
 
-.md-fences-adv-panel,
+.highlight-adv-panel,
 .md-math-container,
 .md-mathjax-preview {
     font-family: fantasy
@@ -497,7 +497,7 @@ span#filesearch-case-option-btn:active {
     font-weight: 700
 }
 
-#write .md-footnote {
+.post-content .md-footnote {
     color: var(--main-red);
     font-weight: 700
 }
@@ -516,22 +516,22 @@ span#filesearch-case-option-btn:active {
     transform: translateZ(0)
 }
 
-#write h1 {
+.post-content h1 {
     font-size: 50px;
     text-align: center
 }
 
-#write .ol .li,
-#write .ul .li,
-#write ol li,
-#write ul li {
+.post-content .ol .li,
+.post-content .ul .li,
+.post-content ol li,
+.post-content ul li {
     list-style-type: none;
     margin-bottom: 7px;
     margin-top: 7px
 }
 
-#write .ul>.li:not(.tab):before,
-#write ul>li:not(.tab):before {
+.post-content .ul>.li:not(.tab):before,
+.post-content ul>li:not(.tab):before {
     border: .1em solid var(--main-blue);
     border-radius: .31em;
     content: "";
@@ -542,10 +542,10 @@ span#filesearch-case-option-btn:active {
     width: .62em
 }
 
-#write .ol .li:before,
-#write .ul .li:before,
-#write ol li:before,
-#write ul li:before {
+.post-content .ol .li:before,
+.post-content .ul .li:before,
+.post-content ol li:before,
+.post-content ul li:before {
     background: var(--main-blue);
     color: var(--olfore-color);
     cursor: pointer;
@@ -553,26 +553,26 @@ span#filesearch-case-option-btn:active {
     transition: all .3s ease-out
 }
 
-#write .ol .li:first-child,
-#write ol li:first-child {
+.post-content .ol .li:first-child,
+.post-content ol li:first-child {
     counter-reset: li
 }
 
-#write .ol .li:hover:before,
-#write .ul .li:hover:before,
-#write ol li:hover:before,
-#write ul li:hover:before {
+.post-content .ol .li:hover:before,
+.post-content .ul .li:hover:before,
+.post-content ol li:hover:before,
+.post-content ul li:hover:before {
     transform: rotate(1turn)
 }
 
-#write .ul>.li:not(.tab):hover:before,
-#write ul>li:not(.tab):hover:before {
+.post-content .ul>.li:not(.tab):hover:before,
+.post-content ul>li:not(.tab):hover:before {
     background-color: var(--main-red);
     border-color: var(--focus-color)
 }
 
-#write .ol>.li:before,
-#write ol>li:before {
+.post-content .ol>.li:before,
+.post-content ol>li:before {
     border-radius: .825em;
     color: #fff;
     content: counter(li);
@@ -586,10 +586,10 @@ span#filesearch-case-option-btn:active {
     width: 1.65em
 }
 
-#write .ol .li input,
-#write .ul .li input,
-#write ol li input,
-#write ul li input {
+.post-content .ol .li input,
+.post-content .ul .li input,
+.post-content ol li input,
+.post-content ul li input {
     margin-bottom: 0;
     margin-top: 0
 }
@@ -598,7 +598,7 @@ table tr:hover {
     background-color: #65666841
 }
 
-.md-fences:not(.md-focus) .CodeMirror-code>:hover {
+.highlight:not(.md-focus) .CodeMirror-code>:hover {
     background-color: var(--code--bg-color-light)
 }
 
@@ -627,7 +627,7 @@ p.md-toc-content:hover {
 
 
 
-#write>pre.md-meta-block.md-end-block {
+.post-content>pre.md-meta-block.md-end-block {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
@@ -635,7 +635,7 @@ p.md-toc-content:hover {
     transition: var(--transition)
 }
 
-#write>pre.md-meta-block.md-end-block:hover {
+.post-content>pre.md-meta-block.md-end-block:hover {
     box-shadow: var(--box-shadow);
     /* transform: var(--transform); */
 }
@@ -988,7 +988,7 @@ footer.ty-footer {
     border-top: 0
 }
 
-pre.md-fences-advanced.md-focus .md-fences-adv-panel {
+pre.highlight-advanced.md-focus .highlight-adv-panel {
     border: 0
 }
 
@@ -1064,20 +1064,20 @@ ul#megamenu-menu-list {
 }
 
 /* mermaid */
-.md-diagram-panel.md-fences-adv-panel {
+.md-diagram-panel.highlight-adv-panel {
     backdrop-filter: blur(20px);
 }
 
-.md-diagram-panel.md-fences-adv-panel:hover {
+.md-diagram-panel.highlight-adv-panel:hover {
     backdrop-filter: blur(50px);
 }
 
-pre.md-fences.md-end-block.md-fences-with-lineno.md-diagram.md-fences-advanced.ty-contain-cm {
+pre.highlight.md-end-block.highlight-with-lineno.md-diagram.highlight-advanced.ty-contain-cm {
     background: transparent !important;
 }
 
 /* 代码框右下角的语言类型显示 */
-pre.md-fences.md-end-block.md-fences-with-lineno.ty-contain-cm.modeLoaded::after {
+pre.highlight.md-end-block.highlight-with-lineno.ty-contain-cm.modeLoaded::after {
     content: attr(lang);
     position: absolute;
     right: 0;

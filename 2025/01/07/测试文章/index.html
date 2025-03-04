@@ -8,8 +8,8 @@
 <head>
   <meta charset="UTF-8">
 
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar.png">
-  <link rel="icon" href="/img/avatar.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
@@ -19,22 +19,22 @@
   <meta name="author" content="Lanxinmob">
   <meta name="keywords" content="">
   
-    <meta name="description" content="指针的const限定1.指向const对象的指针123456const int *p;&#x2F;&#x2F;或int const *p;int a;p &#x3D; &amp;a;&#x2F;&#x2F;正确，p不是只读的*p &#x3D; 42;&#x2F;&#x2F;错误,*p是只读的const int *cptrf &#x3D; &amp;f;&#x2F;&#x2F;正确int *ptr &#x3D; &amp;p;&#x2F;&#x2F;错误  非const对象指针的地址可以赋给const对象的指针，const对象指针的地址">
+    <meta name="description" content="这是一篇测试文章">
 <meta property="og:type" content="article">
-<meta property="og:title" content="指针的const限定">
-<meta property="og:url" content="http://example.com/2025/01/07/c%20review/index.html">
+<meta property="og:title" content="测试文章">
+<meta property="og:url" content="http://example.com/2025/01/07/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/index.html">
 <meta property="og:site_name" content="Lanxinmob">
-<meta property="og:description" content="指针的const限定1.指向const对象的指针123456const int *p;&#x2F;&#x2F;或int const *p;int a;p &#x3D; &amp;a;&#x2F;&#x2F;正确，p不是只读的*p &#x3D; 42;&#x2F;&#x2F;错误,*p是只读的const int *cptrf &#x3D; &amp;f;&#x2F;&#x2F;正确int *ptr &#x3D; &amp;p;&#x2F;&#x2F;错误  非const对象指针的地址可以赋给const对象的指针，const对象指针的地址">
+<meta property="og:description" content="这是一篇测试文章">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-01-07T11:49:03.000Z">
-<meta property="article:modified_time" content="2025-03-03T17:14:08.558Z">
+<meta property="article:modified_time" content="2025-01-07T11:54:56.190Z">
 <meta property="article:author" content="Lanxinmob">
-<meta property="article:tag" content="笔记">
+<meta property="article:tag" content="原创">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>指针的const限定 - Lanxinmob</title>
+  <title>测试文章 - Lanxinmob</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -61,17 +61,18 @@
 <link  rel="stylesheet" href="/css/main.css" />
 
 
-
-
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
   
-<link rel="stylesheet" href="/onelight.css">
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
 
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":false,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":null,"ignore_local":true},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"t0bhfCtJpiDvjE6HeX61GRLl-gzGzoHsz","app_key":"qYdA5fEMKNw64WXFcLTusPvm","server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -82,11 +83,22 @@
   <script  src="/js/color-schema.js" ></script>
   
 
+  
 
   
-<!-- hexo injector head_end start -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head>
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 
 <body>
@@ -195,13 +207,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/4.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="指针的const限定"></span>
+            <span id="subtitle" data-typed-text="测试文章"></span>
           
         </div>
 
@@ -224,7 +236,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          286 字
+          8 字
         
       </span>
     
@@ -235,7 +247,7 @@
         
         
         
-          3 分钟
+          1 分钟
         
       </span>
     
@@ -281,26 +293,13 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">指针的const限定</h1>
+            <h1 id="seo-header">测试文章</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="指针的const限定"><a href="#指针的const限定" class="headerlink" title="指针的const限定"></a>指针的<code>const</code>限定</h1><h2 id="1-指向const对象的指针"><a href="#1-指向const对象的指针" class="headerlink" title="1.指向const对象的指针"></a>1.指向<code>const</code>对象的指针</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> *p;<span class="comment">//或int const *p;</span></span><br><span class="line"><span class="type">int</span> a;</span><br><span class="line">p = &amp;a;<span class="comment">//正确，p不是只读的</span></span><br><span class="line">*p = <span class="number">42</span>;<span class="comment">//错误,*p是只读的</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> *cptrf = &amp;f;<span class="comment">//正确</span></span><br><span class="line"><span class="type">int</span> *ptr = &amp;p;<span class="comment">//错误</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>非<code>const</code>对象指针的地址可以赋给<code>const</code>对象的指针，<code>const</code>对象指针的地址不能赋给非<code>const</code>对象的指针。</li>
-<li><strong>不能使用指向<code>const</code>对象的指针修改指向对象。</strong></li>
-<li><strong>不能保证指向<code>const</code>的指针所指对象的值一定不被其他方式该改变</strong>（如果指向对象是一个普通变量就可以直接修改）。</li>
-</ul>
-<h2 id="2-const指针"><a href="#2-const指针" class="headerlink" title="2.const指针"></a>2.<code>const</code>指针</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> *<span class="type">const</span> ptr;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>这表示 <code>ptr</code>是一个常量指针，指针本身的地址不能修改，但可以通过指针修改它所指向的对象的值。<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ptr = &amp;b;</span><br><span class="line">ptr = pc;</span><br><span class="line">ptr++;<span class="comment">//均错误，ptr是只读的</span></span><br></pre></td></tr></table></figure></li>
-<li>与任何<code>const</code>量一样，<code>const</code>指针必须在定义时初始化。</li>
-</ul>
-<h2 id="3-指向const对象的const指针"><a href="#3-指向const对象的const指针" class="headerlink" title="3.指向const对象的const指针"></a>3.指向<code>const</code>对象的<code>const</code>指针</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">double</span> <span class="type">const</span>* pi = <span class="number">3</span>;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>这表示<code>pi</code>是一个常量指针，指向的对象是常量。不能通过<code>pi</code>修改所指向对象的值，并且指针本身的地址也不能修改。</li>
-</ul>
+                <p>这是一篇测试文章</p>
+
 
                 
               </div>
@@ -319,7 +318,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/C/" class="category-chain-item">C</a>
+  <a href="/categories/Java/" class="category-chain-item">Java</a>
   
   
 
@@ -334,7 +333,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E7%AC%94%E8%AE%B0/" class="print-no-link">#笔记</a>
+        <a href="/tags/%E5%8E%9F%E5%88%9B/" class="print-no-link">#原创</a>
       
     </div>
   
@@ -346,8 +345,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>指针的const限定</div>
-      <div>http://example.com/2025/01/07/c review/</div>
+      <div>测试文章</div>
+      <div>http://example.com/2025/01/07/测试文章/</div>
     </div>
     <div class="license-meta">
       
@@ -391,12 +390,6 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/01/08/latex/" title="LaTex笔记">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">LaTex笔记</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
@@ -413,37 +406,6 @@
             </div>
 
             
-  
-  
-    <article id="comments" lazyload>
-      
-  <div id="valine"></div>
-  <script type="text/javascript">
-    Fluid.utils.loadComments('#valine', function() {
-      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
-        var options = Object.assign(
-          {"appId":"t0bhfCtJpiDvjE6HeX61GRLl-gzGzoHsz","appKey":"qYdA5fEMKNw64WXFcLTusPvm","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
-          {
-            el: "#valine",
-            path: window.location.pathname
-          }
-        )
-        new Valine(options);
-        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
-          var imgSelector = '#valine .vcontent img:not(.vemoji)';
-          Fluid.plugins.imageCaption(imgSelector);
-          Fluid.plugins.fancyBox(imgSelector);
-        })
-      });
-    });
-  </script>
-  <noscript>Please enable JavaScript to view the comments</noscript>
-
-
-    </article>
-  
-
-
           </article>
         </div>
       </div>
@@ -471,6 +433,9 @@
 
 
 
+
+
+  
 
 
 
@@ -653,6 +618,8 @@
 </script>
 
 
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
   <script>Fluid.plugins.codeWidget();</script>
 
 
@@ -704,9 +671,9 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script  src="/js/local-search.js" ></script>
-
   <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
 
 
 
@@ -722,20 +689,5 @@
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

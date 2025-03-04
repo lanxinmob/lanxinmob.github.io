@@ -61,18 +61,17 @@
 <link  rel="stylesheet" href="/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
 
+
+  
+<link rel="stylesheet" href="/onelight.css">
 
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":false,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"t0bhfCtJpiDvjE6HeX61GRLl-gzGzoHsz","app_key":"qYdA5fEMKNw64WXFcLTusPvm","server_url":"https://t0bhfctj.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":false,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":null,"ignore_local":true},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -82,19 +81,6 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-  
-
 
 
   
@@ -341,10 +327,10 @@
 </ul>
 <h1 id="三、如何用代码来实现kmp算法？"><a href="#三、如何用代码来实现kmp算法？" class="headerlink" title="三、如何用代码来实现kmp算法？"></a>三、如何用代码来实现kmp算法？</h1><p>同样主要分为两步，</p>
 <h2 id="1-计算目标字符串的前缀数组"><a href="#1-计算目标字符串的前缀数组" class="headerlink" title="1. 计算目标字符串的前缀数组"></a>1. 计算目标字符串的前缀数组</h2><ul>
-<li>前缀数组定义为<code>prefix[]</code>,<code>j</code>和<code>i</code>分别指向第一、二个字符，让<code>i</code>遍历目标字符串每个字符，<code>j = prefix[j-1]</code>就是<code>j</code>回溯至<code>j</code>所指前一个字符对应元素的位置。<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs c"> <span class="hljs-type">void</span> <span class="hljs-title function_">Prefix</span><span class="hljs-params">(<span class="hljs-type">char</span>* pattern, <span class="hljs-type">int</span>* prefix, <span class="hljs-type">int</span> len)</span><br>&#123;<br>    <span class="hljs-type">int</span> j = <span class="hljs-number">0</span>;<br>    prefix[<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>;<br>    <span class="hljs-type">int</span> i= <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">while</span>(i&lt;len)&#123;<br>        <span class="hljs-keyword">if</span>(pattern[i]==pattern[j])&#123;<br>            j++;<br>            prefix[i] = j;<br>            i++;<br>        &#125;<span class="hljs-keyword">else</span>&#123;<br>            <span class="hljs-keyword">if</span> (j!=<span class="hljs-number">0</span>)<br>            &#123;   <br>                j = prefix[j<span class="hljs-number">-1</span>];<br>            &#125;<span class="hljs-keyword">else</span>&#123;<br>                prefix[i] = <span class="hljs-number">0</span>;<br>                i++;<br>            &#125;<br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure></li>
+<li>前缀数组定义为<code>prefix[]</code>,<code>j</code>和<code>i</code>分别指向第一、二个字符，让<code>i</code>遍历目标字符串每个字符，<code>j = prefix[j-1]</code>就是<code>j</code>回溯至<code>j</code>所指前一个字符对应元素的位置。<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"> <span class="type">void</span> <span class="title function_">Prefix</span><span class="params">(<span class="type">char</span>* pattern, <span class="type">int</span>* prefix, <span class="type">int</span> len)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> j = <span class="number">0</span>;</span><br><span class="line">    prefix[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> i= <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;len)&#123;</span><br><span class="line">        <span class="keyword">if</span>(pattern[i]==pattern[j])&#123;</span><br><span class="line">            j++;</span><br><span class="line">            prefix[i] = j;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">if</span> (j!=<span class="number">0</span>)</span><br><span class="line">            &#123;   </span><br><span class="line">                j = prefix[j<span class="number">-1</span>];</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                prefix[i] = <span class="number">0</span>;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
 <h2 id="2-借助前缀数组进行字符串的匹配"><a href="#2-借助前缀数组进行字符串的匹配" class="headerlink" title="2.借助前缀数组进行字符串的匹配"></a>2.借助前缀数组进行字符串的匹配</h2><ul>
-<li><code>pattern</code>为目标字符串，<code>text</code>为给定字符串，<code>i</code>和<code>j</code>分别指向给定字符串和目标字符串，同样遍历给定字符串，若j指向了目标字符串最后一个字符，则<code>i-j</code>为<code>text</code>中<code>pattern</code>的首字符位置。<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">void</span> <span class="hljs-title function_">kmpsearch</span><span class="hljs-params">(<span class="hljs-type">char</span>*text,<span class="hljs-type">char</span>*pattern)</span><br>&#123; <br>    <span class="hljs-type">int</span> len = <span class="hljs-built_in">strlen</span>(pattern);<br>    <span class="hljs-type">int</span> wid = <span class="hljs-built_in">strlen</span>(text);<br>    <span class="hljs-type">int</span> prefix[len];<br>    Prefix(pattern,prefix,len);<br>    <span class="hljs-type">int</span> i=<span class="hljs-number">0</span>,j=<span class="hljs-number">0</span>;<br><br>    <span class="hljs-keyword">while</span> (i &lt; wid)<br>    &#123;<br>        <span class="hljs-keyword">if</span>(pattern[j]==text[i])&#123;<br>            i++;<br>            j++;<br>        &#125;<br>        <span class="hljs-keyword">if</span>(j==len)&#123;<br>           <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d\n&quot;</span>,i-j);<br>           j = prefix[j<span class="hljs-number">-1</span>];<br>        &#125;<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(i&lt;wid&amp;&amp;pattern[j]!=text[i])&#123;<br>           <span class="hljs-keyword">if</span>(j!=<span class="hljs-number">0</span>)&#123;<br>            j = prefix[j<span class="hljs-number">-1</span>];<br>           &#125;<span class="hljs-keyword">else</span>&#123;<br>            i++;<br>           &#125;<br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure></li>
+<li><code>pattern</code>为目标字符串，<code>text</code>为给定字符串，<code>i</code>和<code>j</code>分别指向给定字符串和目标字符串，同样遍历给定字符串，若j指向了目标字符串最后一个字符，则<code>i-j</code>为<code>text</code>中<code>pattern</code>的首字符位置。<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">kmpsearch</span><span class="params">(<span class="type">char</span>*text,<span class="type">char</span>*pattern)</span></span><br><span class="line">&#123; </span><br><span class="line">    <span class="type">int</span> len = <span class="built_in">strlen</span>(pattern);</span><br><span class="line">    <span class="type">int</span> wid = <span class="built_in">strlen</span>(text);</span><br><span class="line">    <span class="type">int</span> prefix[len];</span><br><span class="line">    Prefix(pattern,prefix,len);</span><br><span class="line">    <span class="type">int</span> i=<span class="number">0</span>,j=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (i &lt; wid)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(pattern[j]==text[i])&#123;</span><br><span class="line">            i++;</span><br><span class="line">            j++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(j==len)&#123;</span><br><span class="line">           <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,i-j);</span><br><span class="line">           j = prefix[j<span class="number">-1</span>];</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(i&lt;wid&amp;&amp;pattern[j]!=text[i])&#123;</span><br><span class="line">           <span class="keyword">if</span>(j!=<span class="number">0</span>)&#123;</span><br><span class="line">            j = prefix[j<span class="number">-1</span>];</span><br><span class="line">           &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            i++;</span><br><span class="line">           &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>本文详细解释了kmp算法如何实现，kmp算法通过目标字符串由自身特性生成的前缀数组来减少回溯的过程，建议亲自动手推一推生成前缀数组和模式匹配的过程，这样可以更好地理解其思想和原理。</p>
 <blockquote>
@@ -520,9 +506,6 @@
 
 
 
-
-
-  
 
 
 
@@ -756,9 +739,9 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script defer src="/js/leancloud.js" ></script>
-
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="/js/leancloud.js" ></script>
 
 
 

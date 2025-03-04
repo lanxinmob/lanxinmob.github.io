@@ -27,7 +27,7 @@
 <meta property="og:description" content="前言笔者在学习字符串的过程中，接触到求子字符串位置的问题，除了暴力解法外了解到有一种名为KMP（烤馍片）的巧妙算法也顺便了解了一下发明者之一的“神”Kunth的履历，但不在此赘述。虽然网上有很多详细图解之类，但我还是不能充分理解。在看完Tushar Roy的讲解后才恍然大悟，本文主要根据他的讲解，结合自己的思考在此写出我的理解。  一、从问题谈起，如何最直接地搜索一个字符串？ 示例：给定字符串是a">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-01-10T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-01-11T05:30:59.225Z">
+<meta property="article:modified_time" content="2025-03-04T05:37:01.024Z">
 <meta property="article:author" content="Lanxinmob">
 <meta property="article:tag" content="算法记录">
 <meta name="twitter:card" content="summary_large_image">
@@ -300,10 +300,10 @@
             
               <div class="markdown-body">
                 
-                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>笔者在学习字符串的过程中，接触到求子字符串位置的问题，除了暴力解法外了解到有一种名为KMP（烤馍片）的巧妙算法也顺便了解了一下发明者之一的“神”Kunth的履历，但不在此赘述。虽然网上有很多详细图解之类，但我还是不能充分理解。在看完Tushar Roy的讲解后才恍然大悟，本文主要根据他的讲解，结合自己的思考在此写出我的理解。</p>
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>笔者在学习字符串的过程中，接触到求子字符串位置的问题，除了暴力解法外了解到有一种名为KMP（烤馍片）的巧妙算法也顺便了解了一下发明者之一的“神”<code>Kunth</code>的履历，但不在此赘述。虽然网上有很多详细图解之类，但我还是不能充分理解。在看完Tushar Roy的讲解后才恍然大悟，本文主要根据他的讲解，结合自己的思考在此写出我的理解。</p>
 <hr>
 <h1 id="一、从问题谈起，如何最直接地搜索一个字符串？"><a href="#一、从问题谈起，如何最直接地搜索一个字符串？" class="headerlink" title="一、从问题谈起，如何最直接地搜索一个字符串？"></a>一、从问题谈起，如何最直接地搜索一个字符串？</h1><ul>
-<li>示例：<br>给定字符串是<code>absdglx</code>,目标字符串是<code>sdgl</code>，给每个字符标上序号，分别是<code>m0,m1,m2,m3,m4,m5,m6</code>,		<code>n0,n1,n2,n3</code>。最直接的搜索并定位目标字符串的方法就是将目标字符串的每个字符给定字符串的字符逐一比较。</li>
+<li>示例：<br>给定字符串是<code>absdglx</code>,目标字符串是<code>sdgl</code>，给每个字符标上序号，分别是<code>m0,m1,m2,m3,m4,m5,m6</code>,<code>n0,n1,n2,n3</code>。最直接的搜索并定位目标字符串的方法就是将目标字符串的每个字符给定字符串的字符逐一比较。</li>
 <li>从<code>m0</code>，<code>n0</code>开始，若匹配则两字符串都从比较的字符往后移动一个字符，继续进行比较；若不相同，则给定字符串回到从起始比较位往后移动一个字符的位置，目标字符串回到<code>n0</code>从头开始比较，直到在给定字符串超过最后一个字符<code>m7</code>前，目标字符串匹配完最后一个字符<code>n3</code>，即搜索到目标字符串。</li>
 <li>要将上述过程通过编程实现，我们可以用两个指针<code>i,j</code>分别指向给定字符串和目标字符串，按上述过程进行指针的后移和回退，直到<code>i</code>或<code>j</code>指向字符串的最后一个字符。</li>
 </ul>
@@ -774,20 +774,5 @@
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

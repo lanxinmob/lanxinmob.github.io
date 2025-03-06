@@ -1,14 +1,14 @@
-
+/*将#write(用于typora)改为.markdown-body*/
 @font-face {
     font-family: 'Cascadia Code';
-    src: url('/onelight/fonts/CascadiaCode.woff2') format('woff2');
+    src: url('./onelight/fonts/CascadiaCode.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: '喵字果汁体';
-    src: url('/onelight/fonts/MiaoZi-GuoZhiTi.woff2') format('woff2');
+    src: url('./onelight/fonts/MiaoZi-GuoZhiTi.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -63,10 +63,21 @@
 }
 
 
-body {
-    font-family: var(--main-font-family)
+.markdown-body {
+    font-family: var(--main-font-family)  
 }
-
+body {
+    font-family: var(--main-font-family)  
+}
+.post-page{
+    background-color: transparent;
+    background-image: url('./onelight/img/bg.gif') !important;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 240px auto;
+    background-attachment: fixed;
+    /*transition: background-image .5s ease-in-out, background-size .5s ease-in-out*/
+}
 ::-moz-selection {
     color: #fff
 }
@@ -76,18 +87,18 @@ body {
     color: #fff
 }
 
-#write {
+.markdown-body {
     letter-spacing: 0;
     /* max-width: 914px; */
     text-align: left
 }
 
-#write,
-#write p {
+.markdown-body,
+.markdown-body p {
     font-size: 16px
 }
 
-#write p {
+.markdown-body p {
     line-height: 26px;
     margin: 0;
     padding-bottom: 8px;
@@ -95,53 +106,53 @@ body {
 }
 
 
-#write input[type=checkbox] {
+.markdown-body input[type=checkbox] {
     left: -3px;
     margin-right: 5px;
     margin-top: calc(1em - 2px)
 }
 
-#write h2,
-#write h3,
-#write h4,
-#write h5,
-#write h6 {
+
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
     color: #000;
     font-weight: 700;
     margin: .72em 0;
     padding: 0
 }
 
-#write h2:hover:before {
+.markdown-body h2:hover:before {
     bottom: .2rem;
     content: "H2"
 }
 
-#write h3:hover:before {
+.markdown-body h3:hover:before {
     bottom: .2rem;
     content: "H3"
 }
 
-#write h4:hover:before {
+.markdown-body h4:hover:before {
     bottom: .2rem;
     content: "H4"
 }
 
-#write h5:hover:before {
+.markdown-body h5:hover:before {
     bottom: .2rem;
     content: "H5"
 }
 
-#write h6:hover:before {
+.markdown-body h6:hover:before {
     bottom: .2rem;
     content: "H6"
 }
 
-#write h2:hover:before,
-#write h3:hover:before,
-#write h4:hover:before,
-#write h5:hover:before,
-#write h6:hover:before {
+.markdown-body h2:hover:before,
+.markdown-body h3:hover:before,
+.markdown-body h4:hover:before,
+.markdown-body h5:hover:before,
+.markdown-body h6:hover:before {
     border-radius: 0;
     bottom: 0;
     color: #166ff36e;
@@ -157,61 +168,62 @@ body {
     vertical-align: baseline;
 }
 
-#write h2 {
+.markdown-body h2 {
     font-size: 1.7rem;
-    margin: 1em 0
+    margin: 1em 0;
+    color: #136ef7;
 }
 
-#write h2 span {
+.markdown-body h2 span {
     color: #136ef7;
     font-weight: 700;
     padding: 3px 10px 1px
 }
 
-#write h3 {
+.markdown-body h3 {
     font-size: 1.5rem
 }
 
-#write h4 {
+.markdown-body h4 {
     font-size: 1.25rem
 }
 
-#write h5,
-#write h6 {
+.markdown-body h5,
+.markdown-body h6 {
     font-size: 1rem
 }
 
-#write ol,
-#write ul {
+.markdown-body ol,
+.markdown-body ul {
     /* color: var(--main-red); */
     margin-bottom: 8px;
     margin-top: 8px;
     padding-left: 40px
 }
 
-#write ul {
+.markdown-body ul {
     list-style-type: disclosure-closed
 }
 
-#write ul ul {
+.markdown-body ul ul {
     list-style-type: square
 }
 
-#write ol {
+.markdown-body ol {
     list-style-type: decimal
 }
 
-#write li section {
+.markdown-body li section {
     font-size: 15px
 }
 
-#write strong {
+.markdown-body strong {
     color: #136ef7;
     font-weight: 700
 }
 
 /* 引用块 */
-#write blockquote {
+.markdown-body blockquote {
     background: var(--gradient-color);
     backdrop-filter: blur(5px);
     border-bottom-right-radius: 10px;
@@ -228,19 +240,19 @@ body {
     transition: var(--transition)
 }
 
-#write blockquote:hover {
+.markdown-body blockquote:hover {
     background: #fff;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
     /* transform: var(--transform); */
     backdrop-filter: unset;
 }
 
-#write blockquote p {
+.markdown-body blockquote p {
     line-height: 26px
 }
 
 
-#write a {
+.markdown-body a {
     margin: 3px;
     border-bottom: 2px solid var(--main-purple);
     color: var(--main-purple);
@@ -248,16 +260,16 @@ body {
     text-decoration: none
 }
 
-#write code {
+.markdown-body code {
     background-color: #ebebeb;
     color: #eb4c37;
     font-family: var(--main-font-family);
     font-size: 14px
 }
 
-#write li code,
-#write p code,
-#write span code {
+.markdown-body li code,
+.markdown-body p code,
+.markdown-body span code {
     border-radius: 4px;
     margin: 0 2px;
     padding: 2px 4px;
@@ -266,7 +278,7 @@ body {
 }
 
 /* 图片 */
-#write img {
+.markdown-body img {
     border: 0;
     border-radius: 5px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
@@ -278,25 +290,25 @@ body {
     width: auto
 }
 
-#write img:hover {
+.markdown-body img:hover {
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
     /* transform: var(--transform); */
 }
 
 /* 表格 */
-#write table tr {
+.markdown-body table tr {
     background-color: #fff;
     border: 0;
     border-top: 1px solid #ccc
 }
 
 /* 交替颜色 */
-#write table tr:nth-child(2n) {
+.markdown-body table tr:nth-child(2n) {
     background-color: #f3f3f3
 }
 
-#write table tr td,
-#write table tr th {
+.markdown-body table tr td,
+.markdown-body table tr th {
     border: 1px solid #ccc;
     font-size: 16px;
     line-height: 1.5;
@@ -304,22 +316,22 @@ body {
     text-align: left
 }
 
-#write table tr th {
+.markdown-body table tr th {
     background-color: #42a5f53d;
     color: var(--main-blue);
     font-weight: 700
 }
 
-#write .md-def-name {
+.markdown-body .md-def-name {
     padding-right: 2.3vw
 }
 
-#write .md-def-name:before {
+.markdown-body .md-def-name:before {
     color: #000;
     content: "["
 }
 
-#write .md-def-name:after {
+.markdown-body .md-def-name:after {
     color: #000
 }
 
@@ -344,171 +356,101 @@ code {
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
 } */
 
-.CodeMirror div.CodeMirror-cursor {
-    border-left: 1px solid #26ed91;
-    z-index: 5
+:root {
+  --main-purple: #9c27b0;  
+  --main-red: #e9405c;     
+  --code-bg-color: #282c34; 
 }
 
-.cm-s-inner div.CodeMirror-selected {
-    background: rgba(113, 124, 180, .2)
+/* 特定语言的代码块 (flow, mermaid, sequence) */
+pre[data-lang="flow"],
+pre[data-lang="mermaid"],
+pre[data-lang="sequence"] {
+  background: #fff;
+  color: #333;
 }
 
-.cm-s-inner .cm-keyword {
-    color: var(--main-purple)
-}
-
-.cm-s-inner .cm-operator {
-    color: #89ddff
-}
-
-.cm-s-inner .cm-variable-2 {
-    color: #eff
-}
-
-.cm-s-inner .cm-type,
-.cm-s-inner .cm-variable-3 {
-    color: #ea6717
-}
-
-.cm-s-inner .cm-builtin {
-    color: #ffcb6b
-}
-
-.cm-s-inner .cm-atom {
-    color: #f78c6c
-}
-
-.cm-s-inner .cm-number {
-    color: #ff5370
-}
-
-.cm-s-inner .cm-def {
-    color: #ff8c00
-}
-
-.cm-s-inner .cm-string {
-    color: #00ad47
-}
-
-.cm-s-inner .cm-string-2 {
-    color: #f07178
-}
-
-.cm-s-inner .cm-comment {
-    color: #cdcdcd;
-}
-
-.cm-s-inner .cm-variable {
-    color: #42a5f5
-}
-
-.cm-s-inner .cm-meta {
-    color: var(--main-red)
-}
-
-.cm-s-inner .cm-attribute {
-    color: #e26fff;
-}
-
-.cm-s-inner .cm-property,
-.cm-s-inner .cm-qualifier {
-    color: var(--main-red)
-}
-
-.cm-s-inner .cm-error {
-    border: solid 0.25px #e9405c;
-    color: #fff;
-}
-
-pre[lang=flow],
-pre[lang=mermaid],
-pre[lang=sequence] {
-    background: #fff;
-    color: #333
-}
-
+/* <mark> 标签 */
 mark {
-    background: #0070ff00;
-    color: var(--main-red);
-    font-weight: 700
+  background: #0070ff00;
+  color: var(--main-red);
+  font-weight: 700;
 }
 
-#write pre {
+
+.markdown-body pre {
     background: var(--code-bg-color);
-    font-family: var(--main-font-family)
+    font-family: var(--main-font-family); 
+    border-radius: 5px;  
+    padding: 15px;       
+    overflow: auto;      
 }
 
-.CodeMirror-selected,
-.CodeMirror-selectedtext {
-    background: hsla(0, 100%, 75%, .1) !important;
-    color: inherit !important;
-    text-shadow: none
+.token.keyword {
+  color: var(--main-purple);
 }
 
-.md-fences-adv-panel,
-.md-math-container,
-.md-mathjax-preview {
-    font-family: fantasy
+.token.operator {
+  color: #89ddff; 
 }
 
-.searchpanel-search-option-btn.active {
-    animation: colorChange 1s infinite;
-    color: var(--main-blue)
+.token.variable {
+  color: #eff; 
 }
 
-span#filesearch-case-option-btn:active {
-    color: var(--main-blue)
+.token.class-name,
+.token.maybe-class-name {
+  color: #ea6717; 
 }
 
-.md-inline-math-container mjx-container {
-    zoom: 1
+.token.builtin {
+  color: #ffcb6b; 
 }
 
-.md-expand.md-img-loaded>.md-meta>span,
-.md-image>.md-meta {
-    color: var(--main-blue);
-    font-family: var(--main-font-family)
+.token.constant {
+  color: #f78c6c; 
 }
 
-.outline-item-active {
-    background: var(--item-bg-color-blue);
-    border-left: 28px solid transparent;
-    margin-left: -28px;
-    margin-right: -28px
+.token.number {
+  color: #ff5370; 
 }
 
-.pin-outline #outline-content .outline-active strong,
-.pin-outline .outline-active {
-    color: var(--main-blue);
-    font-weight: 700
+.token.function {
+  color: #ff8c00; 
 }
 
-.active-tab-files #info-panel-tab-file .info-panel-tab-border,
-.active-tab-outline #info-panel-tab-outline .info-panel-tab-border {
-    background-color: var(--main-blue)
+.token.string {
+  color: #00ad47; 
 }
 
-.ion-close-round:before {
-    color: var(--main-red)
+.token.comment {
+  color: #cdcdcd; 
+  font-style: italic;
 }
 
-#md-searchpanel .btn label {
-    color: var(--main-blue);
-    font-weight: 700
+.token.property {
+  color: #42a5f5; 
 }
 
-#write .md-footnote {
+.token.url {
+  color: var(--main-red);
+}
+
+.token.attr-name {
+  color: #e26fff; 
+}
+
+.token.selector {
+  color: var(--main-red);
+}
+
+
+.markdown-body .md-footnote {
     color: var(--main-red);
     font-weight: 700
 }
 
-.cm-search-hit.CodeMirror-selectedtext,
-.md-search-hit.md-search-select,
-.md-search-select {
-    background: #ff0;
-    color: red;
-    font-weight: 700
-}
+
 
 .md-search-hit {
     background-color: hsla(0, 0%, 100%, .123);
@@ -516,22 +458,22 @@ span#filesearch-case-option-btn:active {
     transform: translateZ(0)
 }
 
-#write h1 {
+.markdown-body h1 {
     font-size: 50px;
     text-align: center
 }
 
-#write .ol .li,
-#write .ul .li,
-#write ol li,
-#write ul li {
+.markdown-body .ol .li,
+.markdown-body .ul .li,
+.markdown-body ol li,
+.markdown-body ul li {
     list-style-type: none;
     margin-bottom: 7px;
     margin-top: 7px
 }
 
-#write .ul>.li:not(.tab):before,
-#write ul>li:not(.tab):before {
+.markdown-body .ul>.li:not(.tab):before,
+.markdown-body ul>li:not(.tab):before {
     border: .1em solid var(--main-blue);
     border-radius: .31em;
     content: "";
@@ -542,10 +484,10 @@ span#filesearch-case-option-btn:active {
     width: .62em
 }
 
-#write .ol .li:before,
-#write .ul .li:before,
-#write ol li:before,
-#write ul li:before {
+.markdown-body .ol .li:before,
+.markdown-body .ul .li:before,
+.markdown-body ol li:before,
+.markdown-body ul li:before {
     background: var(--main-blue);
     color: var(--olfore-color);
     cursor: pointer;
@@ -553,26 +495,26 @@ span#filesearch-case-option-btn:active {
     transition: all .3s ease-out
 }
 
-#write .ol .li:first-child,
-#write ol li:first-child {
+.markdown-body .ol .li:first-child,
+.markdown-body ol li:first-child {
     counter-reset: li
 }
 
-#write .ol .li:hover:before,
-#write .ul .li:hover:before,
-#write ol li:hover:before,
-#write ul li:hover:before {
+.markdown-body .ol .li:hover:before,
+.markdown-body .ul .li:hover:before,
+.markdown-body ol li:hover:before,
+.markdown-body ul li:hover:before {
     transform: rotate(1turn)
 }
 
-#write .ul>.li:not(.tab):hover:before,
-#write ul>li:not(.tab):hover:before {
+.markdown-body .ul>.li:not(.tab):hover:before,
+.markdown-body ul>li:not(.tab):hover:before {
     background-color: var(--main-red);
     border-color: var(--focus-color)
 }
 
-#write .ol>.li:before,
-#write ol>li:before {
+.markdown-body .ol>.li:before,
+.markdown-body ol>li:before {
     border-radius: .825em;
     color: #fff;
     content: counter(li);
@@ -586,10 +528,10 @@ span#filesearch-case-option-btn:active {
     width: 1.65em
 }
 
-#write .ol .li input,
-#write .ul .li input,
-#write ol li input,
-#write ul li input {
+.markdown-body .ol .li input,
+.markdown-body .ul .li input,
+.markdown-body ol li input,
+.markdown-body ul li input {
     margin-bottom: 0;
     margin-top: 0
 }
@@ -627,7 +569,7 @@ p.md-toc-content:hover {
 
 
 
-#write>pre.md-meta-block.md-end-block {
+.markdown-body>pre.md-meta-block.md-end-block {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
@@ -635,7 +577,7 @@ p.md-toc-content:hover {
     transition: var(--transition)
 }
 
-#write>pre.md-meta-block.md-end-block:hover {
+.markdown-body>pre.md-meta-block.md-end-block:hover {
     box-shadow: var(--box-shadow);
     /* transform: var(--transform); */
 }
@@ -923,20 +865,13 @@ span[alt=highlight] {
 
 
 /* 主界面背景图片 */
-content {
-    background-color: transparent;
-    background-image: url('./onelight/img/bg.gif');
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
-    background-size: 200px auto;
-    transition: background-image .5s ease-in-out, background-size .5s ease-in-out
-}
+
 
 
 /* 一体化菜单界面背景图片 */
 div#megamenu-section-open {
     background-color: transparent;
-    background-image: url('./onelight/img/bg3.gif');
+    background-image: url('./onelight/img/bg3.gif') !important;
     background-position: 100% 0%;
     background-repeat: no-repeat;
     background-size: 100px auto;

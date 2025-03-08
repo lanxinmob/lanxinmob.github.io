@@ -335,7 +335,7 @@ body {
     color: #000
 }
 
-.md-fences,
+.fences,
 code {
     border-radius: 5px;
     margin-left: .2em;
@@ -343,7 +343,7 @@ code {
     padding: .1em
 }
 
-.md-fences {
+.fences {
     background-color: var(--code-bg-color);
     box-shadow: 0 4px 10px gray;
     color: #ececec;
@@ -356,99 +356,115 @@ code {
     box-shadow: 0 8px 15px rgba(0, 0, 0, .3);
 } */
 
+/* 定义 CSS 变量 (根据你的需要修改) */
 :root {
-  --main-purple: #9c27b0;  
-  --main-red: #e9405c;     
-  --code-bg-color: #282c34; 
+  --main-purple: #9c27b0;
+  --main-red: #e9405c;
+  --code-bg-color: #282c34;
+  /* 确保 --main-font-family 和 --transition 在 Fluid 主题或其他地方已定义 */
 }
 
-/* 特定语言的代码块 (flow, mermaid, sequence) */
-pre[data-lang="flow"],
-pre[data-lang="mermaid"],
-pre[data-lang="sequence"] {
-  background: #fff;
-  color: #333;
+/* 代码块整体样式 (Fluid 主题已有默认样式，这里是可选的覆盖) */
+pre.line-numbers.language-cpp  {
+  background-color: var(--code-bg-color);
+  /*box-shadow: 0 4px 10px gray; /* 可选 */
+  /*color: #ececec;            /* 可选 */
+  margin: 0 0 20px;          /* 可选 */
+  padding: 0.4em 1em 0.3em;      /* 可选 */
+  border-radius: 5px;        /* 可选 */
+  font-family: var(--main-font-family); /* 确保已定义 */
+  transition: var(--transition);         /* 可选, 确保已定义 */
+  overflow: auto; /* 确保内容溢出时显示滚动条 */
 }
 
-/* <mark> 标签 */
-mark {
-  background: #0070ff00;
-  color: var(--main-red);
-  font-weight: 700;
-}
 
-
-.markdown-body pre {
-    background: var(--code-bg-color);
-    font-family: var(--main-font-family); 
-    border-radius: 5px;  
-    padding: 15px;       
-    overflow: auto;      
+.markdown-body code {
+  border-radius: 5px;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  padding: 0.1em;
+  
 }
 
 .token.keyword {
-  color: var(--main-purple);
+  color: #ea6717;
 }
-
 .token.operator {
-  color: #89ddff; 
+  color: #89ddff;
 }
 
 .token.variable {
-  color: #eff; 
+  color: #eff;
 }
 
-.token.class-name,
-.token.maybe-class-name {
-  color: #ea6717; 
+.token.type{
+  color: #ea6717;
 }
 
-.token.builtin {
-  color: #ffcb6b; 
+.built_in {
+  color: #ffcb6b;
 }
 
-.token.constant {
-  color: #f78c6c; 
+.constant {
+  color: #f78c6c;
 }
 
 .token.number {
-  color: #ff5370; 
+  color: #42a5f5;
 }
 
 .token.function {
-  color: #ff8c00; 
+  color: #ff8c00;
 }
 
 .token.string {
-  color: #00ad47; 
+  color: #00ad47;
 }
-
-.token.comment {
-  color: #cdcdcd; 
+.token.punctuation{
+  color: #cdcdcd;
+}
+.token.comment{
+  color: #cdcdcd;
   font-style: italic;
 }
 
-.token.property {
-  color: #42a5f5; 
+.token.line{
+  color: #42a5f5;
+}
+.language-cpp #text{
+ color: #42a5f5; 
 }
 
-.token.url {
+.url {
   color: var(--main-red);
 }
 
-.token.attr-name {
-  color: #e26fff; 
+.attr-name {
+  color: #e26fff;
 }
 
-.token.selector {
+.selector {
   color: var(--main-red);
 }
 
-
-.markdown-body .md-footnote {
-    color: var(--main-red);
-    font-weight: 700
+/* 可选：如果你需要自定义特定语言的代码块样式 (并且 Fluid 主题没有内置支持) */
+/*
+pre[data-lang="flow"] {
+    background: #fff;
+    color: #333;
 }
+pre[data-lang="mermaid"] {}
+pre[data-lang="sequence"] {}
+*/
+
+/* 其他与代码高亮无关的样式 (根据你的需要添加) */
+/*
+mark {
+  background: transparent;
+  color: var(--main-red);
+  font-weight: 700;
+}
+*/
 
 
 

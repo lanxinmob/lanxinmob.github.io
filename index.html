@@ -52,11 +52,6 @@
 <link  rel="stylesheet" href="/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
-
 
 
   
@@ -67,7 +62,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":false,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":null,"ignore_local":true},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true},"copy_btn":false,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":null,"ignore_local":true},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -87,8 +82,50 @@
 
 
 <body>
+ 
   
-
+  <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@0/autoload.js"></script>
+  <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/live2d-widgets@0/waifu.css">
+  <script>
+   initWidget(
+    {tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "quit"]});
+  </script>
+  <style>
+    #waifu{
+      position: fixed;    
+      bottom: 0;      
+      left: -50px;
+      z-index: 99;
+    }
+  #waifu-tips {
+      position: fixed !important;
+      left: 30px !important;
+      bottom: 280px !important;
+       z-index: 101 !important;
+}
+  #waifu-tool {
+  position: fixed;
+  bottom: 0;      
+  left: 170px;
+  /*top: 25%;
+  left: 100%;*/       
+  z-index: 99;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  transition: left 0.3s ease, opacity 0.3s ease;
+}
+#waifu-tool a {
+    margin-bottom: 5px; 
+    opacity: 0;          
+    transition: opacity 0.3s ease;  
+}
+#waifu:hover #waifu-tool a{
+    opacity: 1;
+}
+  </style>
+  
+  
   <header>
     
 
@@ -236,6 +273,135 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
+        <a href="/2025/03/07/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/" target="_self">
+          前端经验
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/03/07/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/" target="_self">
+        <div>
+          前端经验JavaScript &lt;script src=&quot;...&quot;&gt;标签用于加载并执行外部JavaScript文件，浏览器会下载并执行src属性指定的URL中的JavaScript代码。 &lt;script&gt;标签内部代码通常会当作JavaScript代码来执行，但是如果&lt;script&gt;标签具有src属性，浏览器会忽略标签内部内容，只执行src属性指
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-03-07 00:00" pubdate>
+              2025-03-07
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/js/" class="category-chain-item">js</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/js/css/" class="category-chain-item">css</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%AC%94%E8%AE%B0/">#笔记</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/03/01/learngit/" target="_self">
+          learngit
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/03/01/learngit/" target="_self">
+        <div>
+          Learngit感谢足基！感谢Angine学长！~ git是目前世界上最先进的分布式版本控制系统。 “Git is a free software distributed under the GPL.”“Creating  a new branch is quick and simple.”   作用 版本管理 协作  常用指令 git init初始化一个git仓库          git pu
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-03-01 00:00" pubdate>
+              2025-03-01
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/git/" class="category-chain-item">git</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%AC%94%E8%AE%B0/">#笔记</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
         <a href="/2025/02/22/Crash%20Course%20Computer%20Science%E3%80%90%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E9%80%9F%E6%88%90%E8%AF%BE%E3%80%91(1)/" target="_self">
           Crash Course Computer Science【计算机科学速成课】(1)
         </a>
@@ -347,39 +513,6 @@
               <a href="/tags/%E7%AE%97%E6%B3%95%E8%AE%B0%E5%BD%95/">#算法记录</a>
             
           </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/01/08/about/" target="_self">
-          About
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/01/08/about/" target="_self">
-        <div>
-          欢迎来到我的博客！
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-01-08 00:40" pubdate>
-              2025-01-08
-            </time>
-          </div>
-        
-        
         
       </div>
     </article>

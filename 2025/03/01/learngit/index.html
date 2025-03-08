@@ -27,7 +27,7 @@
 <meta property="og:description" content="Learngit感谢足基！感谢Angine学长！~ git是目前世界上最先进的分布式版本控制系统。 “Git is a free software distributed under the GPL.”“Creating  a new branch is quick and simple.”   作用 版本管理 协作  常用指令 git init初始化一个git仓库          git pu">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-02-28T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-03-08T02:46:40.703Z">
+<meta property="article:modified_time" content="2025-03-08T02:55:08.161Z">
 <meta property="article:author" content="Lanxinmob">
 <meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary_large_image">
@@ -226,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          468 字
+          465 字
         
       </span>
     
@@ -302,7 +302,7 @@
 <h3 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h3><ul>
 <li><code>git init</code>初始化一个git仓库         </li>
 <li><code>git pull</code> 抓取新提交<br>  <code>git add</code> 添加文件<br> <code>git commit -m&quot;&quot;</code> 将暂存区修改一次性提交至分支<br> <code>git status</code> 查看工作区状态   </li>
-<li><code>git diff</code> 查看修改内容<br>  <code>git log</code> 查看提交历史<br> <code>git reflog</code> 查看命令历史<br> <code>git reset --hard HEAD^回到上一状态 /commit_id</code>在版本历史中穿梭<br> <code>git checkout --file</code> 丢弃工作区修改&#x2F;恢复误删（用版本库里版本替换）<br> <code>git remote add origin git@name:path/reponame.git</code>关联远程库<br> <code>git push origin master</code>推送最新修改<br> <code>git clone</code>克隆仓库<br> <code>git branch</code>查看分支<br> <code>git branch &lt;name&gt;</code>创建分支<br> <code>git checkout/switch &lt;name&gt;</code> 切换分支<br> <code>git merge &lt;name&gt;</code>合并分支<br> <code>git checkout -b/switch -c &lt;name&gt;</code> 创建+切换<br> <code>git branch -d/-D</code>（强删）删除分支<br> <code>git log --graph</code>看分支合并图<br> &#96;&#96;git merge –no-ff -m”” branchname<code>以普通模式合并    </code>git stash&#96; 保存现场 修复bug后</li>
+<li><code>git diff</code> 查看修改内容<br>  <code>git log</code> 查看提交历史<br> <code>git reflog</code> 查看命令历史<br> <code>git reset --hard HEAD^回到上一状态 /commit_id</code>在版本历史中穿梭<br> <code>git checkout --file</code> 丢弃工作区修改&#x2F;恢复误删（用版本库里版本替换）<br> <code>git remote add origin git@name:path/reponame.git</code>关联远程库<br> <code>git push origin master</code>推送最新修改<br> <code>git clone</code>克隆仓库<br> <code>git branch</code>查看分支<br> <code>git branch &lt;name&gt;</code>创建分支<br> <code>git checkout/switch &lt;name&gt;</code> 切换分支<br> <code>git merge &lt;name&gt;</code>合并分支<br> <code>git checkout -b/switch -c &lt;name&gt;</code> 创建+切换<br> <code>git branch -d/-D</code>（强删）删除分支<br> <code>git log --graph</code>看分支合并图<br> <code>git merge --no-ff -m&quot;&quot; branchname</code>以普通模式合并<br> <code>git stash</code> 保存现场 修复bug后</li>
 <li><code>git stash pop</code>回到现场<br>  <code>git cherry-pick &lt;commit&gt;</code> 复制修改<br> <code>git remote -v</code> 查看远程库信息<br> <code>git branch --set-upstream branchname origin/branchname</code>建立本地分支与远程分支联系<br> <code>git rebase git log --graph --pretty=oneline --abbrev-commit</code>整理分支历史成直线</li>
 </ul>
 <h2 id="Conventional-commit"><a href="#Conventional-commit" class="headerlink" title="Conventional commit"></a>Conventional commit</h2><h4 id="1-类型（Type）"><a href="#1-类型（Type）" class="headerlink" title="1.类型（Type）"></a>1.类型（Type）</h4><ul>
@@ -727,5 +727,20 @@
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

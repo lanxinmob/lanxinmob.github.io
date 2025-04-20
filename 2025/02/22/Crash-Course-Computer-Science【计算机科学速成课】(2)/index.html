@@ -19,18 +19,27 @@
   <meta name="author" content="Lanxinmob">
   <meta name="keywords" content="">
   
-    <meta name="description" content="感谢速成课！感谢 Carrie Anne！感谢中文翻译组！~原视频Crash Course Computer Sciencehttps:&#x2F;&#x2F;github.com&#x2F;1c7&#x2F;crash-course-computer-science-chinese 第  集：">
+    <meta name="description" content="感谢速成课！感谢 Carrie Anne！感谢中文翻译组！~原视频Crash Course Computer Sciencehttps:&#x2F;&#x2F;github.com&#x2F;1c7&#x2F;crash-course-computer-science-chinese 第 11 集：编程语言发展史 计算机只能处理二进制，二进制是处理器的”母语”，称为machine language或machine code  在计算机早">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Crash Course Computer Science【计算机科学速成课】(2)">
 <meta property="og:url" content="http://example.com/2025/02/22/Crash-Course-Computer-Science%E3%80%90%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E9%80%9F%E6%88%90%E8%AF%BE%E3%80%91(2)/index.html">
 <meta property="og:site_name" content="Lanxinmob">
-<meta property="og:description" content="感谢速成课！感谢 Carrie Anne！感谢中文翻译组！~原视频Crash Course Computer Sciencehttps:&#x2F;&#x2F;github.com&#x2F;1c7&#x2F;crash-course-computer-science-chinese 第  集：">
+<meta property="og:description" content="感谢速成课！感谢 Carrie Anne！感谢中文翻译组！~原视频Crash Course Computer Sciencehttps:&#x2F;&#x2F;github.com&#x2F;1c7&#x2F;crash-course-computer-science-chinese 第 11 集：编程语言发展史 计算机只能处理二进制，二进制是处理器的”母语”，称为machine language或machine code  在计算机早">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/Screenshot_20250329_173619.jpg">
+<meta property="og:image" content="http://example.com/images/Screenshot_20250329_173655.jpg">
+<meta property="og:image" content="http://example.com/images/Screenshot_20250329_164342.jpg">
+<meta property="og:image" content="http://example.com/images/Screenshot_20250329_180708.jpg">
+<meta property="og:image" content="http://example.com/images/Screenshot_20250329_180736.jpg">
+<meta property="og:image" content="http://example.com/images/Screenshot_20250329_180751.jpg">
+<meta property="og:image" content="http://example.com/images/Screenshot_20250412_164742.jpg">
+<meta property="og:image" content="http://example.com/images/Screenshot_20250412_164809.jpg">
 <meta property="article:published_time" content="2025-02-21T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-03-29T02:43:55.055Z">
+<meta property="article:modified_time" content="2025-04-12T10:15:48.919Z">
 <meta property="article:author" content="Lanxinmob">
 <meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/images/Screenshot_20250329_173619.jpg">
   
   
   
@@ -226,7 +235,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          29 字
+          4.5k 字
         
       </span>
     
@@ -237,7 +246,7 @@
         
         
         
-          1 分钟
+          38 分钟
         
       </span>
     
@@ -291,7 +300,132 @@
               <div class="markdown-body">
                 
                 <h2 id="感谢速成课！感谢-Carrie-Anne！感谢中文翻译组！"><a href="#感谢速成课！感谢-Carrie-Anne！感谢中文翻译组！" class="headerlink" title="感谢速成课！感谢 Carrie Anne！感谢中文翻译组！~"></a>感谢速成课！感谢 Carrie Anne！感谢中文翻译组！~</h2><h4 id="原视频"><a href="#原视频" class="headerlink" title="原视频"></a>原视频</h4><p><a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo">Crash Course Computer Science</a><br><a target="_blank" rel="noopener" href="https://github.com/1c7/crash-course-computer-science-chinese">https://github.com/1c7/crash-course-computer-science-chinese</a></p>
-<h2 id="第-集："><a href="#第-集：" class="headerlink" title="第  集："></a>第  集：</h2>
+<h2 id="第-11-集：编程语言发展史"><a href="#第-11-集：编程语言发展史" class="headerlink" title="第 11 集：编程语言发展史"></a>第 11 集：编程语言发展史</h2><ol>
+<li><p>计算机只能处理二进制，二进制是处理器的”母语”，称为<strong>machine language</strong>或<strong>machine code</strong></p>
+</li>
+<li><p>在计算机早期阶段，必须用机器码写程序</p>
+<ul>
+<li>先在纸上用英语写一个”高层次版”,这种对程序的高层次描述叫“<strong>伪代码</strong>”，在纸上写好后用“操作码表”转成机器码，喂入计算机运行。</li>
+</ul>
+</li>
+<li><p>在 1940~1950 年代,程序员开发出一种新语言，更可读、更高层次，每个操作码分配一个简单名字，叫”<strong>助记符</strong>“，”助记符”后面紧跟数据，形成完整指令。</p>
+<ul>
+<li>比如存指令在内存地址<code>0</code>：<code>0010 1110</code>，前 4 位是操作码，假设对某CPU<code>0010</code>代表<code> LOAD_A</code> 指令,即把值从内存复制到寄存器A,后 4 位是内存地址，<code>1110</code> 是十进制的 14,所以这 8 位表达的意思是 <strong>“读内存地址 14，放入寄存器 A”</strong></li>
+</ul>
+</li>
+</ol>
+<p><img src="/images/Screenshot_20250329_173619.jpg" srcset="/img/loading.gif" lazyload></p>
+<ol start="4">
+<li><p>但是CPU不知道 <code>LOAD_A 14</code> 是什么，于是有了<strong>汇编器</strong>，它可以读取用”汇编语言”写的程序，然后转成”机器码”。</p>
+<ul>
+<li>随着时间推移，汇编器有越来越多功能，让编程更容易，比如自动分析JUMP地址，汇编器不用固定跳转地址，而是让你插入可跳转的标签，当程序被传入汇编器，汇编器会自己搞定跳转地址,程序员可以专心编程，不用管底层细节。<br> <img src="/images/Screenshot_20250329_173655.jpg" srcset="/img/loading.gif" lazyload></li>
+</ul>
+</li>
+<li><p>一般来说，一条汇编指令对应一条机器指令，所以汇编码和底层硬件的连接很紧密，汇编器仍然强迫程序员思考，用什么寄存器和内存地址。于是 Hopper 设计了一种高级语言，一行高级编程语言，可能会转成几十条二进制指令。为了做到这种复杂转换，Hopper 在 1952 年创造了第一个<strong>编译器</strong>，编译器专门把高级语言，转成低级语言，比如汇编或机器码（CPU 可以直接执行机器码）。</p>
+<ul>
+<li><em>FORTRAN，名字来自 “公式翻译”,这门语言数年后由 IBM 在 1957 年发布,主宰了早期计算机编程</em><br><em>FORTRAN 项目总监 John Backus 说过</em><br><em>“Much of my work has come from being lazy.I didn’t like writing programs,</em><br><em>and so … I started work on a programming system to make it easier to write programs.”</em></li>
+</ul>
+</li>
+<li><p>当时 IBM 在卖计算机,因此最初 FORTRAN 代码只能跑在 IBM 计算机上。1950 年代大多数编程语言和编译器，只能运行在一种计算机上，如果升级电脑，可能要重写所有代码，因此工业界，学术界，政府的计算机专家，在 1959 年组建了一个联盟，数据系统语言委员会，Grace Hopper 担任顾问，开发一种通用编程语言，可以在不同机器上通用，最后诞生了一门高级，易于使用，”普通面向商业语言”，简称 COBOL。</p>
+<ul>
+<li>为了兼容不同底层硬件，每个计算架构需要一个 COBOL 编译器，最重要的是，这些编译器都可以接收相同 COBOL 代码，不管是什么电脑，这叫”一次编写，到处运行”。</li>
+</ul>
+</li>
+<li><p>编程语言设计的黄金时代才刚刚开始，和硬件一起飞速发展</p>
+<ul>
+<li>在 1960 年代，有 ALGOL, LISP 和 BASIC 等语言 70年代有：Pascal，<strong>C</strong> 和 Smalltalk </li>
+<li>80年代有：**C++**，Objective-C 和 Perl</li>
+<li>90年代有：<strong>Python</strong>，Ruby 和 <strong>Java</strong> 新千年 Swift, C#, <strong>Go</strong> 在崛起</li>
+</ul>
+</li>
+</ol>
+<h2 id="第-12-集-编程原理"><a href="#第-12-集-编程原理" class="headerlink" title="第 12 集 编程原理"></a>第 12 集 编程原理</h2><ol>
+<li>以游戏为切入点讲解条件语句，循环语句，函数的使用，体会函数的强大之处和现代编程的核心<ul>
+<li><code>it&#39;s not magic,it&#39;s the power of abstraction</code></li>
+</ul>
+</li>
+<li>比如浏览器这样的复杂程序，用一长串语句来写是不可能的,会有几百万行代码，没人能理解,所以现代软件由上千个函数组成,每个负责不同的事。<br>如今超过100行代码的函数很少见，如果多于 100 行，应该有东西可以拆出来做成一个函数，符合软件设计中“<strong>高内聚低耦合</strong>”的原则。</li>
+<li><strong>模块化编程</strong>，不仅可以让单个程序员独立制作 App，也让团队协作可以写更大型的程序，不同程序员写不同函数，只需要确保自己的代码工作正常。</li>
+<li>现代编程语言 有很多预先写好的函数集合，叫 “<strong>库</strong>“，由专业人员编写，不仅效率高，而且经过了仔细检查，几乎做所有事情都有库，网络、图像、声音。</li>
+</ol>
+<h2 id="第-13-集-编程入门"><a href="#第-13-集-编程入门" class="headerlink" title="第 13 集 编程入门"></a>第 13 集 编程入门</h2><ol>
+<li>如何想出高效的算法是早在计算机出现前就有的问题，记载最多的算法之一是“排序”。</li>
+<li>输入大小和运行步骤数之间的关系称为算法的复杂度，计算机科学家们用“大O表示法”，来表示运行速度的量级。<ul>
+<li>比如 O(N)效率并不高，比如”归并排序”的算法复杂度是 O(n * log n)，n 是每次合并需要比较的次数和数组大小成正比，log N 是合并步骤的次数。<br> <img src="/images/Screenshot_20250329_164342.jpg" srcset="/img/loading.gif" lazyload></li>
+</ul>
+</li>
+<li>图搜索算法也有很多，有不同优缺点，每次用谷歌地图时，类似<strong>Dijkstra</strong> 的算法就在服务器上运行，寻找最佳路线，现实世界中算法无处不在。</li>
+</ol>
+<h2 id="第-14-集-数据结构"><a href="#第-14-集-数据结构" class="headerlink" title="第 14 集 数据结构"></a>第 14 集 数据结构</h2><ol>
+<li><strong>数组</strong>（Array）也叫<strong>列表</strong>（list）或<strong>向量</strong>（Vector）（在其它编程语言里），数组的值一个个连续存在内存里。<ul>
+<li>可以把多个值存在数组变量里，为了拿出数组中某个值，我们要指定一个下标（index）。大多数编程语言里，数组下标都从 0 开始，用方括号 [ ] 代表访问数组。</li>
+<li>下标可以理解为<strong>偏移量</strong>，<code>offset</code> 为 0 ，说明为数组中第一个数。<br> <img src="/images/Screenshot_20250329_180708.jpg" srcset="/img/loading.gif" lazyload></li>
+</ul>
+</li>
+<li>字符串在内存里以 0 结尾,不是”字符0”，是”二进制值0”,这叫字符”<strong>null</strong>“，表示字符串结尾。如果调用 print 在屏幕上输出字符串,会从开始位置，逐个显示到屏幕,直到遇到<code>null</code>值停止。</li>
+<li>多个变量打包在一起叫结构体 (Struct),结构体可以创建复杂的数据结构。</li>
+<li>一个结构体存一个变量,一个指针（pointer）叫一个节点(node),”<strong>指针</strong>“是一种特殊变量（注意区分指针和指针变量），指向一个内存地址，用节点可以做链表（linked list）。</li>
+<li><strong>链表</strong>是一种灵活数据结构，能存很多个节点 (node)，灵活性是通过每个节点指向下一个节点实现的。<br> <img src="/images/Screenshot_20250329_180736.jpg" srcset="/img/loading.gif" lazyload><ul>
+<li>第一个节点，值是 7，指向地址 <code>1008</code>，代表下一个节点，位于内存地址 <code>1008</code>，下一个节点值是 112，指向地址<code>1002</code> 是一个值为 14 的节点。这个节点指回地址 <code>1000</code>，也就是第一个节点。这叫循环链表，但链表也可以是非循环的，最后一个指针是 0，”<code>null</code>“，代表链表尽头。<br> <img src="/images/Screenshot_20250329_180751.jpg" srcset="/img/loading.gif" lazyload></li>
+</ul>
+</li>
+<li>数组大小需要预先定好,链表大小可以动态增减。<ul>
+<li>可以创建一个新节点，通过改变指针值，把新节点插入链表，链表也很容易重新排序，两端缩减，分割，倒序等。</li>
+</ul>
+</li>
+<li>很多复杂数据结构都用链表，比如<strong>队列</strong>（queue）和 <strong>栈</strong>（stack）<ul>
+<li>队列<strong>先进先出</strong>（FIFO），栈<strong>后进先出</strong>(LIFO) 术语叫”入栈”（push） “出栈”（pop）。</li>
+</ul>
+</li>
+<li>如果节点改一下，改成 2 个指针就能做<strong>树</strong>（tree）。<ul>
+<li>很多算法用了 “树” 这种数据结构，同样，程序员很少看指针的具体值，而是把”树”抽象成这样：最高的节点叫”<strong>根节点</strong>“（root），”根节点”下的所有节点都叫”<strong>子节点</strong>“（children），任何子节点的直属上层节点，叫”<strong>母节点</strong>“（parent node），没有任何子节点的节点，也就是“树”结束的地方叫“<strong>叶节点</strong>”。</li>
+</ul>
+</li>
+</ol>
+<h2 id="第-15-集-阿兰·图灵"><a href="#第-15-集-阿兰·图灵" class="headerlink" title="第 15 集 阿兰·图灵"></a>第 15 集 阿兰·图灵</h2><ol>
+<li>计算机科学之父<strong>阿兰·马蒂森·图灵</strong>于 1921 年出生在伦敦，从小就表现出惊人数学和科学能力。他对计算机科学的建树始于 1935 年，当时他是剑桥国王学院的硕士生，他开始解决德国数学家<strong>大卫·希尔伯特</strong>提出的问题，叫 Entscheidungsproblem （德语）即”<strong>可判定性问题</strong>“:是否存在一种算法，输入正式逻辑语句，输出准确的”是”或”否”答案？</li>
+<li>图灵提出了一种假想的计算机，现在叫“<strong>图灵机</strong>”。图灵机是一台理论计算设备，有一个状态变量保存当前状态，一组规则描述机器着什么，可能是在纸带写入一个符号，或把读写头移动一格，或执行这些动作的组合。<br> <img src="/images/Screenshot_20250412_164742.jpg" srcset="/img/loading.gif" lazyload><ul>
+<li>比如读一个以零结尾的字符串，并计算 1 的出现次数，出现偶数次在纸带上写一个 1 ，奇数次写一个 0 。要使用图灵机来实现这一动作首先要定义规则，当前符号为 1 ，状态更新为奇数或偶数，读写头向右移动，如果当前符号是 0 ，状态为偶数那么在纸带上写一个 1，状态改为停机。<br> <img src="/images/Screenshot_20250412_164809.jpg" srcset="/img/loading.gif" lazyload></li>
+</ul>
+</li>
+<li>图灵证明了这个假想机器如果有足够的时间和内存，可以执行任何计算，他是一台通用计算机，一个可以创造任何东西的强大计算模型！但“停机问题”证明了不是所有问题都能用计算解决。</li>
+<li>丘奇和图灵证明了计算是有极限的，起步了可计算性理论，现在叫”丘奇-图灵论题”。当时是1936年，图灵只有24岁。从1936年到1938年在丘奇指导下，他在普林斯顿拿到博士学位。毕业后回到剑桥，1939年后不久，英国卷入第二次世界大战。整个战争期间，图灵和同事在布莱切利园努力破解加密，位于”布莱切利园”的一个密码破译组织，他的工作内容之一是破解德国的通信加密，特别是”<strong>恩尼格玛机</strong>“加密的信息。</li>
+<li>战后，图灵回到学术界为许多早期计算机工作做出贡献，比如曼彻斯特 1 号，一个早期有影响力的存储程序计算机，但他最有名的战后贡献是”<strong>人工智能</strong>“。1950 年，图灵设想了未来的计算机，拥有和人类一样的智力，或至少难以区分，图灵提出如果计算机能欺骗人类相信它是人类，才算是智能。你可以问他问题，如果你区分不出来哪个是人类，哪个是计算机，那么计算机就通过了<strong>图灵测试</strong>。</li>
+<li>图灵那个时代，同性恋在英国和大部分国家都是违法的，1952 年调查他家的入室盗窃案时，向当局暴露了他的性取向，被起诉 “行为严重不检点”。图灵被定罪，有2个选择：1.入狱2.接受激素来压制性欲，他选了后者，部分原因是为了继续学术工作，但药物改变了他的情绪和性格,图灵于1954年服毒自尽，年仅41岁。</li>
+</ol>
+<h2 id="第-16-集-软件工程"><a href="#第-16-集-软件工程" class="headerlink" title="第 16 集 软件工程"></a>第 16 集 软件工程</h2><ol>
+<li>微软的 Office 大约有 4000 万代码，为了写大型程序，程序员用各种工具和方法，所有形成了”软件工程”学科。把大项目分解成小函数，可以让多人同时工作，如果只是这样，微软 Office 会有几十万个函数还是太多了，解决办法是：把函数打包成层级，把相关代码都放在一起，打包成<strong>对象（objects）</strong>。<ul>
+<li>例如，汽车软件中可能有几个和定速巡航有关的函数，比如 设定速度，逐渐加速减速，停止定速巡航因为这些函数都相关，可以包装成一个”定速巡航对象”。可能还有 “火花塞点火” “燃油泵” 和 “散热器”，我们可以做一个”引擎对象” 来包括所有”子”对象。同时也可能有自己的函数和变量。</li>
+<li>总的来说，对象可以包其它对象，函数和变量。把函数打包成对象的思想叫 “<strong>面向对象编程</strong>“</li>
+</ul>
+</li>
+<li>其他团队阅读代码时需要文档帮助理解代码都做什么，以及定义好的 “程序编程接口” -简称<strong>API</strong>，API 帮助不同程序员合作不用知道具体细节，只要知道怎么使用就行了。”面向对象”的编程语言可以指定函数是 public 或 private，来设置权限，”面向对象”的编程语言可以指定函数是 public 或 private，来设置权限，如果函数标记成 private意味着 只有同一个对象内的其他函数能调用它。</li>
+<li>“面向对象”的核心是隐藏复杂度，选择性的公布功能。因为做大型项目很有效，所以广受欢迎，计算机上几乎所有软件，游戏机里几乎所有游戏<br>都是 “面向对象” 编程语言写的，比如 C++, C#, Objective-C 等。</li>
+<li>集成开发环境，简称 IDE，IDE 帮助开发者整理和看代码，很多 IDE 还可以直接编译和运行代码，定位到出错代码，还会提供信息帮你解决问题这叫<strong>调试</strong>（debug）。</li>
+<li>大多数程序员会花 70％~80％ 时间调试，而不是在写代码，好工具能极大帮助程序员防止和解决错误。程序员工作的另一个重要部分是给代码写<strong>文档</strong>，文档一般放在一个叫 README 的文件里告诉其他程序员，看代码前先看这个文件，文档也可以直接写成”注释”，放在源代码里。</li>
+<li>源代码管理也叫”<strong>版本控制</strong>“帮助团队协作，把代码放到一个中心服务器上叫”代码仓库”，这样多名程序员可以同时写代码，建立庞大的系统。源代码管理可以跟踪所有变化，如果发现 bug，全部或部分代码，可以”回滚”到之前的稳定版，”源代码管理” 也记录了谁改了什么代码。</li>
+<li>测试一般由个人或小团队完成，测试可以统称 “质量保证测试”，简称 <strong>QA</strong>。严格测试软件的方方面面，模拟各种可能情况，看软件会不会出错，基本上就是找 bug，解决大大小小的错误需要很多工作但对确保软件质量至关重要，让软件在各种情况下按预期运行。<ul>
+<li>“beta 版” 软件，意思是软件接近完成但不是100％完全测试过。公司有时会向公众发布 beta 版，以帮助发现问题，用户就像免费的 QA 团队。</li>
+<li>alpha 版本般很粗糙，错误很多，经常只在公司内部测试。</li>
+</ul>
+</li>
+</ol>
+<h2 id="第-17-集-集成电路-摩尔定律"><a href="#第-17-集-集成电路-摩尔定律" class="headerlink" title="第 17 集 集成电路 &amp; 摩尔定律"></a>第 17 集 集成电路 &amp; 摩尔定律</h2><ol>
+<li>大约 1940年代~1960年代中期这段时间里计算机都由独立部件组成叫”分立元件”，然后不同组件再用线连在一起。1950 年代中期，晶体管开始商业化（市场上买得到），但晶体管依然是分立元件。</li>
+<li>解决方法就是把多个组件包在一起，变成一个新的独立组件，这就是<strong>集成电路</strong>（IC），在1959年 Robert Noyce 的仙童半导体让集成电路变为现实，仙童半导体公司用硅，硅的蕴藏量丰富，占地壳四分之一，也更稳定可靠，Noyce 被公认为现代集成电路之父。开创了电子时代，创造了硅谷（仙童公司所在地）。</li>
+<li>为了创造更大更复杂的电路，于是有了<strong>印刷电路板</strong>，简称 PCB，PCB 可以大规模生产，无需焊接或用一大堆线，它通过蚀刻金属线的方式，把零件连接到一起。把 PCB 和 IC 结合使用可以大幅减少独立组件和电线，但做到相同的功能。</li>
+<li>为了实现更复杂的设计，需要全新的制作工艺”<strong>光刻</strong>“。光把复杂图案印到材料上，比如半导体。晶圆做基础把复杂金属电路放上面，集成所有东西。<ul>
+<li>硅片顶部加一层薄薄的氧化层, 作为保护层然后加一层特殊化学品, 叫 “光刻胶”，光刻胶被光照射后会变得可溶可以用一种特殊化学药剂洗掉，把光掩膜盖到晶圆上，用强光照射挡住光的地方，光刻胶不会变化，光照到的地方，光刻胶会发生化学变化洗掉它之后，暴露出氧化层用另一种化学物质洗掉”氧化层”露出的部分, 蚀刻到硅层现在硅又露出来了。我们修改硅露出来的区域让它导电性更好，”掺杂”通常用高温气体来做，比如磷，渗透进暴露出的硅，改变电学性质最后一步，在氧化层上做通道放一层薄薄的金属，比如铝或铜，连接不同晶体管。</li>
+</ul>
+</li>
+<li>1965年，戈登·摩尔看到了趋势：每两年左右，得益于材料和制造技术的发展同样大小的空间，能塞进两倍数量的晶体管，叫<strong>摩尔定律</strong>。</li>
+<li>CPU 不是唯一受益的元件，大多数电子器件都在指数式发展：内存，显卡，固态硬盘，摄像头感光元件，等等。</li>
+<li>专家们几十年来一直在预言摩尔定律的终结进一步做小，会面临 2 个大问题1. 用光掩膜把图案弄到晶圆上，因为光的波长，精度已达极限所以科学家在研制波长更短的光源，投射更小的形状2. 当晶体管非常小，电极之间可能只距离几个原子电子会跳过间隙，这叫：<strong>量子隧道贯穿</strong>。如果晶体管漏电，就不是好开关。</li>
+</ol>
+<h2 id="第-18-集-操作系统"><a href="#第-18-集-操作系统" class="headerlink" title="第 18 集 操作系统"></a>第 18 集 操作系统</h2><ol>
+<li></li>
+</ol>
+
                 
               </div>
             

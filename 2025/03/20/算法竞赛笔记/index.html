@@ -19,22 +19,22 @@
   <meta name="author" content="Lanxinmob">
   <meta name="keywords" content="">
   
-    <meta name="description" content="JavaScript &lt;script src&#x3D;&quot;...&quot;&gt;标签用于加载并执行外部JavaScript文件，浏览器会下载并执行src属性指定的URL中的JavaScript代码。 &lt;script&gt;标签内部代码通常会当作JavaScript代码来执行，但是如果&lt;script&gt;标签具有src属性，浏览器会忽略标签内部内容，只执行src属性指定的外部">
+    <meta name="description" content="贪心：根据某个最优策略选出一个方案，这个方案就是最优解，通常就是排序 动态规划：多决策问题中，寻找最多或最少情况 暴力：双指针、BFS\DFS  数学题：  打表：用电脑找一些合法答案，然后在这些合法答案中找规律  tips：  排序时确保元素都已经初始化  一定要注意不满足条件输出“-1”的情况">
 <meta property="og:type" content="article">
-<meta property="og:title" content="前端经验">
-<meta property="og:url" content="http://example.com/2025/03/07/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:title" content="算法竞赛笔记">
+<meta property="og:url" content="http://example.com/2025/03/20/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Lanxinmob">
-<meta property="og:description" content="JavaScript &lt;script src&#x3D;&quot;...&quot;&gt;标签用于加载并执行外部JavaScript文件，浏览器会下载并执行src属性指定的URL中的JavaScript代码。 &lt;script&gt;标签内部代码通常会当作JavaScript代码来执行，但是如果&lt;script&gt;标签具有src属性，浏览器会忽略标签内部内容，只执行src属性指定的外部">
+<meta property="og:description" content="贪心：根据某个最优策略选出一个方案，这个方案就是最优解，通常就是排序 动态规划：多决策问题中，寻找最多或最少情况 暴力：双指针、BFS\DFS  数学题：  打表：用电脑找一些合法答案，然后在这些合法答案中找规律  tips：  排序时确保元素都已经初始化  一定要注意不满足条件输出“-1”的情况">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-03-06T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-03-08T08:40:56.537Z">
+<meta property="article:published_time" content="2025-03-19T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-04-12T08:41:16.958Z">
 <meta property="article:author" content="Lanxinmob">
 <meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>前端经验 - Lanxinmob</title>
+  <title>算法竞赛笔记 - Lanxinmob</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -203,7 +203,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="前端经验"></span>
+            <span id="subtitle" data-typed-text="算法竞赛笔记"></span>
           
         </div>
 
@@ -214,8 +214,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-03-07 00:00" pubdate>
-          2025年3月7日 凌晨
+        <time datetime="2025-03-20 00:00" pubdate>
+          2025年3月20日 凌晨
         </time>
       </span>
     
@@ -226,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          369 字
+          115 字
         
       </span>
     
@@ -237,7 +237,7 @@
         
         
         
-          4 分钟
+          1 分钟
         
       </span>
     
@@ -285,31 +285,23 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">前端经验</h1>
+            <h1 id="seo-header">算法竞赛笔记</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><ul>
-<li><code>&lt;script src=&quot;...&quot;&gt;</code>标签用于加载并执行外部<code>JavaScript</code>文件，浏览器会下载并执行<code>src</code>属性指定的<code>URL</code>中的<code>JavaScript</code>代码。</li>
-<li><code>&lt;script&gt;</code>标签内部代码通常会当作<code>JavaScript</code>代码来执行，但是如果<code>&lt;script&gt;</code>标签具有<code>src</code>属性，浏览器会忽略标签内部内容，只执行<code>src</code>属性指定的外部<code>JavaScript</code>文件。</li>
-<li><code>console.log(&quot;Hello, world!&quot;);</code>用于在控制台输出信息。</li>
+                <p>贪心：根据某个最优策略选出一个方案，这个方案就是最优解，通常就是排序</p>
+<p>动态规划：多决策问题中，寻找最多或最少情况</p>
+<p>暴力：双指针、BFS\DFS </p>
+<p>数学题：</p>
+<ul>
+<li>打表：用电脑找一些合法答案，然后在这些合法答案中找规律</li>
 </ul>
-<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><ul>
-<li><p><code>#waifu-tips</code>的样式如果已经在<code>waifu.css</code>中设置, 那么自定义的<code>css</code>不会生效,因为<code>waifu.css</code>中的规则优先级更高,如果需要改变样式就要在自定义的<code>styles.css</code>中写更具体的选择器, 或者使用<code>!important</code>.</p>
-</li>
-<li><p>将<code>#write</code>(用于<code>typora</code>)改为<code>.markdown-body</code>,F12看<code>elements</code>标签<code>class</code> <code>style.css</code>有没有正常应用,检查<code>html</code>结构修改相应的类名。</p>
-<p><code>#write</code> 是<code>ID</code>选择器，一个页面只能有一个<code>#write</code>,<code>.markdown-body</code> 是类选择器，可以复用于多个元素。</p>
-<p>不同<code>markdown</code>解析器<code>class</code>名不同,解析器改变<code>css</code>文件中相应类名也要改变。</p>
-</li>
+<p>tips：</p>
+<ul>
+<li>排序时确保元素都已经初始化</li>
 </ul>
-<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><ul>
-<li><p><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://sdf/style.css&quot;&gt;</code> </p>
-<p><code>rel</code>表示引入一个外部的<code>css</code>的样式表，<code>href</code>指定了文件路径</p>
-</li>
-<li><p><code>ejs</code>一种基于<code>JavaScript</code>的模板引擎，用于在<code>HTML</code>文件中嵌入<code>JavaScript</code>逻辑，以实现动态内容渲染。<code>ejs</code>文件最终被解析为标准的<code>html</code>，主要使用<code>JavaScript</code>语句，也可以使用普通的<code>html</code>语句。</p>
-</li>
-</ul>
+<p>一定要注意不满足条件输出“-1”的情况</p>
 
                 
               </div>
@@ -328,12 +320,12 @@
     
       <span class="category-chain">
         
-  <a href="/categories/js/" class="category-chain-item">js</a>
+  <a href="/categories/cpp/" class="category-chain-item">cpp</a>
   
   
     <span>></span>
     
-  <a href="/categories/js/css/" class="category-chain-item">css</a>
+  <a href="/categories/cpp/C/" class="category-chain-item">C</a>
   
   
 
@@ -362,8 +354,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>前端经验</div>
-      <div>http://example.com/2025/03/07/前端学习/</div>
+      <div>算法竞赛笔记</div>
+      <div>http://example.com/2025/03/20/算法竞赛笔记/</div>
     </div>
     <div class="license-meta">
       
@@ -375,7 +367,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年3月7日</div>
+          <div>2025年3月20日</div>
         </div>
       
       
@@ -407,9 +399,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/03/20/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E7%AC%94%E8%AE%B0/" title="算法竞赛笔记">
+                      <a href="/2025/03/30/modification%20report/" title="">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">算法竞赛笔记</span>
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -417,8 +409,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/03/01/learngit/" title="learngit">
-                        <span class="hidden-mobile">learngit</span>
+                      <a href="/2025/03/07/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/" title="前端经验">
+                        <span class="hidden-mobile">前端经验</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

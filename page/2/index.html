@@ -21,8 +21,8 @@
   
     <meta name="description" content="Lanxinmob&#39;s Blog">
 <meta property="og:type" content="website">
-<meta property="og:title" content="归档">
-<meta property="og:url" content="http://example.com/archives/2025/01/index.html">
+<meta property="og:title" content="Lanxinmob">
+<meta property="og:url" content="http://example.com/page/2/index.html">
 <meta property="og:site_name" content="Lanxinmob">
 <meta property="og:description" content="Lanxinmob&#39;s Blog">
 <meta property="og:locale" content="zh_CN">
@@ -31,7 +31,7 @@
   
   
   
-  <title>归档 - Lanxinmob</title>
+  <title>Lanxinmob</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -84,11 +84,52 @@
 <body>
  
   
+  <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@0/autoload.js"></script>
+  <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/live2d-widgets@0/waifu.css">
+  <script>
+   initWidget(
+    {tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "quit"]});
+  </script>
+  <style>
+    #waifu{
+      position: fixed;    
+      bottom: 0;      
+      left: -50px;
+      z-index: 99;
+    }
+  #waifu-tips {
+      position: fixed !important;
+      left: 30px !important;
+      bottom: 280px !important;
+       z-index: 101 !important;
+}
+  #waifu-tool {
+  position: fixed;
+  bottom: 0;      
+  left: 170px;
+  /*top: 25%;
+  left: 100%;*/       
+  z-index: 99;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  transition: left 0.3s ease, opacity 0.3s ease;
+}
+#waifu-tool a {
+    margin-bottom: 5px; 
+    opacity: 0;          
+    transition: opacity 0.3s ease;  
+}
+#waifu:hover #waifu-tool a{
+    opacity: 1;
+}
+  </style>
+  
   
   <header>
     
 
-<div class="header-inner" style="height: 60vh;">
+<div class="header-inner" style="height: 100vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -188,19 +229,23 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/5.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/3.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="归档"></span>
+            <span id="subtitle" data-typed-text="This is Nothing but Lanxinmob&#39;s Blog!"></span>
           
         </div>
 
         
       </div>
 
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
       
     </div>
   </div>
@@ -214,48 +259,176 @@
     
       <div class="container nopadding-x-md">
         <div id="board"
-          >
+          style="margin-top: 0">
           
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="list-group">
-  <p class="h4">共计 13 篇文章</p>
-  <hr>
-  
-  
+
+  <div class="row mx-auto index-card">
     
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/01/08/latex/" target="_self">
+          LaTex笔记
+        </a>
+      </h2>
+
       
-      <p class="h5">2025</p>
-    
-    <a href="/2025/01/11/Knuth-Morris-Pratt%EF%BC%88KMP%EF%BC%89%E7%AE%97%E6%B3%95%E3%80%90%E8%AF%A6%E8%A7%A3%E3%80%91/" class="list-group-item list-group-item-action">
-      <time>01-11</time>
-      <div class="list-group-item-title">Knuth-Morris-Pratt（KMP）算法【详解】</div>
-    </a>
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/01/08/latex/" target="_self">
+        <div>
+          一、LaTex中常见希腊字母 \alpha \beta \gamma \delta \epsilon \zeta \eta \pi \sigma \tau \phi \psi \chi  二、LaTex常用指令   名称 指令 名称 指令    分数 \frac{分子}{分母} 乘号 \times   开方 \sqrt[m]{n} 求和 \sum   求积 \prod 积分 \int   上标 ^
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-01-08 00:00" pubdate>
+              2025-01-08
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
   
     
-    <a href="/2025/01/08/latex/" class="list-group-item list-group-item-action">
-      <time>01-08</time>
-      <div class="list-group-item-title">LaTex笔记</div>
-    </a>
+      <span class="category-chain">
+        
+  <a href="/categories/LaTex/" class="category-chain-item">LaTex</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%AC%94%E8%AE%B0/">#笔记</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/01/07/c%20review/" target="_self">
+          指针的const限定
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/01/07/c%20review/" target="_self">
+        <div>
+          指针的const限定1.指向const对象的指针123456const int *p;//或int const *p;int a;p = &amp;a;//正确，p不是只读的*p = 42;//错误,*p是只读的const int *cptrf = &amp;f;//正确int *ptr = &amp;p;//错误  非const对象指针的地址可以赋给const对象的指针，const对象指针的地址
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-01-07 19:49" pubdate>
+              2025-01-07
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
   
     
-    <a href="/2025/01/07/c%20review/" class="list-group-item list-group-item-action">
-      <time>01-07</time>
-      <div class="list-group-item-title">指针的const限定</div>
-    </a>
+      <span class="category-chain">
+        
+  <a href="/categories/C/" class="category-chain-item">C</a>
   
+  
+
+      </span>
     
-    <a href="/2025/01/07/hello-world/" class="list-group-item list-group-item-action">
-      <time>01-07</time>
-      <div class="list-group-item-title">Hello World</div>
-    </a>
   
-</div>
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%AC%94%E8%AE%B0/">#笔记</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/01/07/hello-world/" target="_self">
+          Hello World
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/01/07/hello-world/" target="_self">
+        <div>
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-01-07 19:07" pubdate>
+              2025-01-07
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
 
 
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </span>
+  </nav>
 
 
 

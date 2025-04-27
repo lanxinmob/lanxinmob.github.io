@@ -40,7 +40,7 @@
 <meta property="og:image" content="http://example.com/images/Screenshot_20250427_185106.jpg">
 <meta property="og:image" content="http://example.com/images/Screenshot_20250427_184937.jpg">
 <meta property="article:published_time" content="2025-04-09T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-04-27T11:31:16.091Z">
+<meta property="article:modified_time" content="2025-04-27T11:41:04.167Z">
 <meta property="article:author" content="Lanxinmob">
 <meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary_large_image">
@@ -403,7 +403,7 @@
 </li>
 <li><p>NLP 早期的一个基本问题是怎么把句子切成一块块，了解单词类型有用，但不幸的是，很多词有多重含义，可以用作名词或动词，仅靠字典，不能解决这种模糊问题。开发了”<strong>短语结构规则</strong>“来代表语法规则，你可以给一门语言制定出一堆规则，用这些规则，可以做出”<strong>分析树</strong>“它给每个单词标了可能是什么词性，也标明了句子的结构，数据块更小更容易处理。处理, 分析, 生成文字是聊天机器人的最基本部件，早期聊天机器人大多用的是规则，专家把用户可能会说的话，和机器人应该回复什么，写成上百个规则。显然，这很难维护，而且对话不能太复杂。</p>
 </li>
-<li><p>如今大多用<strong>机器学习</strong>，用上GB的真人聊天数据来训练机器人，在 Facebook 的一个实验里，聊天机器人甚至发展出自己的语言，但实际上只是计算机在制定简单协议来帮助沟通。用机器学习从语言数据库中学习，如今准确度最高的语音识别系统用<strong>深度神经网络</strong>。was 中的 wah 和 sss，等等，这些构成单词的声音片段，叫”<strong>音素</strong>“。</p>
+<li><p>如今大多用<strong>机器学习</strong>，用上GB的真人聊天数据来训练机器人，在 Facebook 的一个实验里，聊天机器人甚至发展出自己的语言，但实际上只是计算机在制定简单协议来帮助沟通。用机器学习从语言数据库中学习，如今准确度最高的语音识别系统用<strong>深度神经网络</strong>。was 中的 wah 和 sss，等等，这些构成单词的声音片段，叫“<strong>音素</strong>”。</p>
 <p> <img src="/images/Screenshot_20250427_185101.jpg" srcset="/img/loading.gif" lazyload></p>
 <p>使用快速傅里叶变换（FFT）</p>
 <p>  <img src="/images/Screenshot_20250427_185106.jpg" srcset="/img/loading.gif" lazyload></p>
@@ -839,20 +839,5 @@
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

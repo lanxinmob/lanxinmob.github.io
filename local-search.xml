@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>赛务技术</title>
+    <link href="/2025/05/04/%E8%B5%9B%E5%8A%A1%E6%8A%80%E6%9C%AF/"/>
+    <url>/2025/05/04/%E8%B5%9B%E5%8A%A1%E6%8A%80%E6%9C%AF/</url>
+    
+    <content type="html"><![CDATA[<p>Alt + F1 ：</p><p>natsume_client bind -i E45</p><p>curl -k -s <a href="https://10.12.13.20:2333/static/configure_judgehost.sh">https://10.12.13.20:2333/static/configure_judgehost.sh</a> | bash</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>笔记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>OSI模型和TCP/IP协议</title>
     <link href="/2025/04/26/OSI%E6%A8%A1%E5%9E%8B/"/>
     <url>/2025/04/26/OSI%E6%A8%A1%E5%9E%8B/</url>

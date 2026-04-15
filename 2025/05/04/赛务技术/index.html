@@ -288,14 +288,33 @@
             <h1 id="seo-header">赛务技术</h1>
             
             
-              <div class="markdown-body">
-                
-                <p>Alt + F1 ：</p>
-<p>natsume_client bind -i E45</p>
-<p>curl -k -s <a target="_blank" rel="noopener" href="https://10.12.13.20:2333/static/configure_judgehost.sh">https://10.12.13.20:2333/static/configure_judgehost.sh</a> | bash</p>
+          
+<div class="setup-guide">
+    <h3>Judgehost 节点配置步骤</h3>
+    <ol>
+        <li>
+            绑定客户端至对应节点（如 E45）：
+            <br>
+            <code>natsume_client bind -i E45</code>
+        </li>
+        <li>
+            下载并自动执行配置脚本：
+            <br>
+            <pre><code>curl -k -s https://10.12.13.20:2333/static/configure_judgehost.sh | bash</code></pre>
+        </li>
+    </ol>
+</div>
 
-                
-              </div>
+<hr> 
+
+<div class="other-records">
+    <h3>其他记录</h3>
+    <ul>
+        <li>
+            按 <kbd>Alt</kbd> + <kbd>F1</kbd> 唤醒图形界面
+        </li>
+    </ul>
+</div>
             
             <hr/>
             <div>

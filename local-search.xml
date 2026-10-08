@@ -4,31 +4,6 @@
   
   
   <entry>
-    <title>赛务技术</title>
-    <link href="/2025/05/04/%E8%B5%9B%E5%8A%A1%E6%8A%80%E6%9C%AF/"/>
-    <url>/2025/05/04/%E8%B5%9B%E5%8A%A1%E6%8A%80%E6%9C%AF/</url>
-    
-    <content type="html"><![CDATA[<div class="setup-guide">    <h3>Judgehost 节点配置步骤</h3>    <ol>        <li>            绑定客户端至对应节点（如 E45）：            <br>            <code>natsume_client bind -i E45</code>        </li>        <li>            下载并自动执行配置脚本：            <br>            <pre><code>curl -k -s https://10.12.13.20:2333/static/configure_judgehost.sh | bash</code></pre>        </li>    </ol></div><hr> <div class="other-records">    <h3>其他记录</h3>    <ul>        <li>            按 <kbd>Alt</kbd> + <kbd>F1</kbd> 唤醒图形界面        </li>    </ul></div>]]></content>
-    
-    
-    <categories>
-      
-      <category>Linux</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>笔记</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>OSI模型和TCP/IP协议</title>
     <link href="/2025/04/26/OSI%E6%A8%A1%E5%9E%8B/"/>
     <url>/2025/04/26/OSI%E6%A8%A1%E5%9E%8B/</url>
